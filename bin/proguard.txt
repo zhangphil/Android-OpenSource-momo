@@ -1,0 +1,281 @@
+# view AndroidManifest.xml #generated:147
+-keep class com.baidu.location.f { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.immomo.momo.android.BaseApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.immomo.momo.android.activity.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.immomo.momo.android.activity.AboutTabsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:137
+-keep class com.immomo.momo.android.activity.FeedProfileActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.immomo.momo.android.activity.FindPwdEmailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.immomo.momo.android.activity.FindPwdPhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.immomo.momo.android.activity.FindPwdTabsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.immomo.momo.android.activity.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.immomo.momo.android.activity.ImageBrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.immomo.momo.android.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.immomo.momo.android.activity.OtherFeedListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.immomo.momo.android.activity.OtherProfileActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.immomo.momo.android.activity.ProtocolActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.immomo.momo.android.activity.ResetPwdPhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.immomo.momo.android.activity.UserGuiDeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.immomo.momo.android.activity.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.immomo.momo.android.activity.maintabs.ContactTabsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class com.immomo.momo.android.activity.maintabs.MainTabActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.immomo.momo.android.activity.maintabs.NearByActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.immomo.momo.android.activity.maintabs.NearByFeedsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.immomo.momo.android.activity.maintabs.SessionListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.immomo.momo.android.activity.maintabs.UserSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:142
+-keep class com.immomo.momo.android.activity.message.ChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.immomo.momo.android.activity.register.RegisterActivity { <init>(...); }
+
+# view res/layout/activity_chat.xml #generated:20
+-keep class com.immomo.momo.android.view.ChatListView { <init>(...); }
+
+# view res/layout/include_imagefactory_crop.xml #generated:6
+-keep class com.immomo.momo.android.view.CropImageView { <init>(...); }
+
+# view res/layout/activity_chat.xml #generated:71
+# view res/layout/activity_feedprofile.xml #generated:110
+-keep class com.immomo.momo.android.view.EmoteInputView { <init>(...); }
+
+# view res/layout/activity_feedprofile.xml #generated:70
+# view res/layout/include_message_textditor.xml #generated:46
+-keep class com.immomo.momo.android.view.EmoticonsEditText { <init>(...); }
+
+# view res/layout/activity_feedprofile.xml #generated:46
+# view res/layout/header_feed.xml #generated:194
+# view res/layout/header_feed.xml #generated:68
+# view res/layout/include_industry.xml #generated:58
+# view res/layout/include_otherprofile_accountinfo.xml #generated:148
+# view res/layout/include_otherprofile_accountinfo.xml #generated:201
+# view res/layout/include_otherprofile_accountinfo.xml #generated:235
+# view res/layout/include_otherprofile_selfintroduction.xml #generated:122
+# view res/layout/include_otherprofile_selfintroduction.xml #generated:54
+# view res/layout/include_otherprofile_selfintroduction.xml #generated:88
+# view res/layout/listitem_feed.xml #generated:72
+# view res/layout/listitem_feedcomment.xml #generated:30
+# view res/layout/listitem_feedcomment.xml #generated:40
+# view res/layout/message_text.xml #generated:2
+# view res/layout/otherprofile_joingroup_item.xml #generated:18
+-keep class com.immomo.momo.android.view.EmoticonsTextView { <init>(...); }
+
+# view res/layout/common_flipping_loading_diloag.xml #generated:9
+-keep class com.immomo.momo.android.view.FlippingImageView { <init>(...); }
+
+# view res/layout/activity_about.xml #generated:30
+# view res/layout/activity_about.xml #generated:80
+# view res/layout/activity_findpwdemail.xml #generated:30
+# view res/layout/activity_findpwdphone.xml #generated:27
+# view res/layout/activity_findpwdphone.xml #generated:49
+# view res/layout/activity_login.xml #generated:52
+# view res/layout/activity_login.xml #generated:62
+# view res/layout/activity_resetpwdphone.xml #generated:30
+# view res/layout/activity_resetpwdphone.xml #generated:46
+# view res/layout/activity_resetpwdphone.xml #generated:56
+# view res/layout/activity_resetpwdphone.xml #generated:83
+# view res/layout/activity_welcome.xml #generated:100
+# view res/layout/activity_welcome.xml #generated:111
+# view res/layout/common_bottombar_tab_chat.xml #generated:23
+# view res/layout/common_bottombar_tab_chat.xml #generated:9
+# view res/layout/common_bottombar_tab_friend.xml #generated:9
+# view res/layout/common_bottombar_tab_nearby.xml #generated:9
+# view res/layout/common_bottombar_tab_profile.xml #generated:9
+# view res/layout/common_bottombar_tab_site.xml #generated:9
+# view res/layout/common_dialog_generic.xml #generated:35
+# view res/layout/common_dialog_generic.xml #generated:80
+# view res/layout/common_flipping_loading_diloag.xml #generated:15
+# view res/layout/common_headerbar.xml #generated:48
+# view res/layout/common_headerbar_spinner.xml #generated:11
+# view res/layout/common_tabbar_item_lightblue.xml #generated:17
+# view res/layout/common_toast.xml #generated:8
+# view res/layout/header_feed.xml #generated:100
+# view res/layout/include_dialog_chat.xml #generated:23
+# view res/layout/include_dialog_chat.xml #generated:38
+# view res/layout/include_dialog_chat.xml #generated:8
+# view res/layout/include_dialog_nearby_filter.xml #generated:29
+# view res/layout/include_dialog_nearby_filter.xml #generated:84
+# view res/layout/include_dialog_otherfeedlist.xml #generated:23
+# view res/layout/include_dialog_otherfeedlist.xml #generated:8
+# view res/layout/include_header_righttext.xml #generated:6
+# view res/layout/include_industry.xml #generated:15
+# view res/layout/include_industry.xml #generated:38
+# view res/layout/include_nearby_group_header.xml #generated:21
+# view res/layout/include_nearby_group_header.xml #generated:31
+# view res/layout/include_otherprofile_accountinfo.xml #generated:101
+# view res/layout/include_otherprofile_accountinfo.xml #generated:111
+# view res/layout/include_otherprofile_accountinfo.xml #generated:139
+# view res/layout/include_otherprofile_accountinfo.xml #generated:14
+# view res/layout/include_otherprofile_accountinfo.xml #generated:192
+# view res/layout/include_otherprofile_accountinfo.xml #generated:226
+# view res/layout/include_otherprofile_accountinfo.xml #generated:251
+# view res/layout/include_otherprofile_accountinfo.xml #generated:283
+# view res/layout/include_otherprofile_accountinfo.xml #generated:293
+# view res/layout/include_otherprofile_accountinfo.xml #generated:322
+# view res/layout/include_otherprofile_accountinfo.xml #generated:332
+# view res/layout/include_otherprofile_accountinfo.xml #generated:53
+# view res/layout/include_otherprofile_accountinfo.xml #generated:71
+# view res/layout/include_otherprofile_bindinfo.xml #generated:10
+# view res/layout/include_otherprofile_bindinfo.xml #generated:114
+# view res/layout/include_otherprofile_bindinfo.xml #generated:156
+# view res/layout/include_otherprofile_bindinfo.xml #generated:72
+# view res/layout/include_otherprofile_bottom.xml #generated:106
+# view res/layout/include_otherprofile_bottom.xml #generated:28
+# view res/layout/include_otherprofile_bottom.xml #generated:55
+# view res/layout/include_otherprofile_bottom.xml #generated:81
+# view res/layout/include_otherprofile_feed.xml #generated:133
+# view res/layout/include_otherprofile_feed.xml #generated:142
+# view res/layout/include_otherprofile_feed.xml #generated:164
+# view res/layout/include_otherprofile_feed.xml #generated:31
+# view res/layout/include_otherprofile_feed.xml #generated:39
+# view res/layout/include_otherprofile_feed.xml #generated:65
+# view res/layout/include_otherprofile_feed.xml #generated:86
+# view res/layout/include_otherprofile_joingroup.xml #generated:10
+# view res/layout/include_otherprofile_selfintroduction.xml #generated:10
+# view res/layout/include_otherprofile_selfintroduction.xml #generated:113
+# view res/layout/include_otherprofile_selfintroduction.xml #generated:45
+# view res/layout/include_otherprofile_selfintroduction.xml #generated:79
+# view res/layout/include_pull_to_refresh.xml #generated:29
+# view res/layout/include_pull_to_refresh.xml #generated:36
+# view res/layout/include_pull_to_refreshing_header.xml #generated:43
+# view res/layout/include_pull_to_refreshing_header.xml #generated:50
+# view res/layout/include_register_baseinfo.xml #generated:100
+# view res/layout/include_register_baseinfo.xml #generated:37
+# view res/layout/include_register_baseinfo.xml #generated:65
+# view res/layout/include_register_baseinfo.xml #generated:87
+# view res/layout/include_register_birthday.xml #generated:28
+# view res/layout/include_register_birthday.xml #generated:43
+# view res/layout/include_register_birthday.xml #generated:52
+# view res/layout/include_register_birthday.xml #generated:60
+# view res/layout/include_register_birthday.xml #generated:88
+# view res/layout/include_register_phone.xml #generated:29
+# view res/layout/include_register_phone.xml #generated:58
+# view res/layout/include_register_phone.xml #generated:81
+# view res/layout/include_register_photo.xml #generated:100
+# view res/layout/include_register_photo.xml #generated:111
+# view res/layout/include_register_photo.xml #generated:132
+# view res/layout/include_register_photo.xml #generated:7
+# view res/layout/include_register_photo.xml #generated:75
+# view res/layout/include_register_setpwd.xml #generated:21
+# view res/layout/include_register_verify.xml #generated:22
+# view res/layout/include_register_verify.xml #generated:60
+# view res/layout/include_welcome_item.xml #generated:15
+# view res/layout/listitem_dialog.xml #generated:9
+# view res/layout/listitem_feed.xml #generated:148
+# view res/layout/listitem_feed.xml #generated:178
+# view res/layout/listitem_feed.xml #generated:44
+# view res/layout/listitem_feed.xml #generated:62
+# view res/layout/listitem_feedcomment.xml #generated:50
+# view res/layout/listitem_filter_item.xml #generated:26
+# view res/layout/listitem_nearby_group.xml #generated:127
+# view res/layout/listitem_nearby_group.xml #generated:165
+# view res/layout/listitem_nearby_group.xml #generated:181
+# view res/layout/listitem_nearby_group.xml #generated:25
+# view res/layout/listitem_nearby_group.xml #generated:35
+# view res/layout/listitem_user.xml #generated:140
+# view res/layout/listitem_user.xml #generated:179
+# view res/layout/listitem_user.xml #generated:188
+# view res/layout/listitem_user.xml #generated:201
+# view res/layout/listitem_user.xml #generated:208
+# view res/layout/listitem_user.xml #generated:218
+# view res/layout/message_group_send_template.xml #generated:38
+# view res/layout/message_image.xml #generated:42
+# view res/layout/message_timestamp.xml #generated:22
+# view res/layout/message_timestamp.xml #generated:30
+# view res/layout/otherprofile_joingroup_item.xml #generated:32
+-keep class com.immomo.momo.android.view.HandyTextView { <init>(...); }
+
+# view res/layout/include_header.xml #generated:2
+-keep class com.immomo.momo.android.view.HeaderLayout { <init>(...); }
+
+# view res/layout/common_headerbar.xml #generated:61
+-keep class com.immomo.momo.android.view.HeaderSpinner { <init>(...); }
+
+# view res/layout/fragment_nearbygroup.xml #generated:7
+-keep class com.immomo.momo.android.view.MoMoRefreshExpandableList { <init>(...); }
+
+# view res/layout/activity_otherfeedlist.xml #generated:17
+# view res/layout/fragment_nearbypeople.xml #generated:7
+-keep class com.immomo.momo.android.view.MoMoRefreshListView { <init>(...); }
+
+# view res/layout/activity_otherprofile.xml #generated:12
+-keep class com.immomo.momo.android.view.PagerScrollView { <init>(...); }
+
+# view res/layout/activity_imagebrowser.xml #generated:33
+-keep class com.immomo.momo.android.view.PhotoTextView { <init>(...); }
+
+# view res/layout/include_imagefactory_fliter.xml #generated:7
+-keep class com.immomo.momo.android.view.RotateImageView { <init>(...); }
+
+# view res/layout/common_headerbar_spinner.xml #generated:24
+# view res/layout/include_pull_to_refresh.xml #generated:15
+-keep class com.immomo.momo.android.view.RotatingImageView { <init>(...); }
+
+# view res/layout/include_otherprofile_feed.xml #generated:115
+# view res/layout/include_userphoto_avatar_item.xml #generated:10
+-keep class com.immomo.momo.android.view.RoundImageView { <init>(...); }
+
+# view res/layout/activity_chat.xml #generated:43
+-keep class com.immomo.momo.android.view.ScrollLayout { <init>(...); }
+
+# view res/layout/activity_imagebrowser.xml #generated:13
+# view res/layout/activity_userguide.xml #generated:2
+# view res/layout/common_userphoto.xml #generated:11
+-keep class com.immomo.momo.android.view.ScrollViewPager { <init>(...); }
+
+# view res/layout/common_headerbar.xml #generated:36
+-keep class com.immomo.momo.android.view.ScrollingTextView { <init>(...); }
+
+# view res/layout/common_headerbar.xml #generated:155
+-keep class com.immomo.momo.android.view.SwitcherButton { <init>(...); }
+
+# view res/layout/include_otherprofile_photos.xml #generated:9
+-keep class com.immomo.momo.android.view.UserPhotosView { <init>(...); }
+

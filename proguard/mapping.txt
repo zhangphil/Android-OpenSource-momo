@@ -1,0 +1,2639 @@
+android.support.v4.app.BackStackRecord -> android.support.v4.app.a:
+    android.support.v4.app.FragmentManagerImpl mManager -> a
+    android.support.v4.app.BackStackRecord$Op mHead -> b
+    android.support.v4.app.BackStackRecord$Op mTail -> c
+    int mNumOp -> d
+    int mEnterAnim -> e
+    int mExitAnim -> f
+    int mPopEnterAnim -> g
+    int mPopExitAnim -> h
+    int mTransition -> i
+    int mTransitionStyle -> j
+    boolean mAddToBackStack -> k
+    boolean mAllowAddToBackStack -> l
+    java.lang.String mName -> m
+    boolean mCommitted -> n
+    int mIndex -> o
+    int mBreadCrumbTitleRes -> p
+    java.lang.CharSequence mBreadCrumbTitleText -> q
+    int mBreadCrumbShortTitleRes -> r
+    java.lang.CharSequence mBreadCrumbShortTitleText -> s
+    java.lang.String toString() -> toString
+    void dump$ec96877(java.lang.String,java.io.PrintWriter) -> a
+    void dump(java.lang.String,java.io.PrintWriter,boolean) -> a
+    void addOp(android.support.v4.app.BackStackRecord$Op) -> a
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int) -> a
+    android.support.v4.app.FragmentTransaction replace$2fdc650e(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> b
+    android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> c
+    android.support.v4.app.FragmentTransaction setCustomAnimations$228f0801() -> a
+    void bumpBackStackNesting(int) -> a
+    int commit() -> b
+    void run() -> run
+    void popFromBackStack$1385ff() -> c
+android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.b:
+    android.support.v4.app.BackStackRecord$Op next -> a
+    android.support.v4.app.BackStackRecord$Op prev -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    int popEnterAnim -> g
+    int popExitAnim -> h
+    java.util.ArrayList removed -> i
+android.support.v4.app.BackStackState -> android.support.v4.app.BackStackState:
+    int[] mOps -> a
+    int mTransition -> b
+    int mTransitionStyle -> c
+    java.lang.String mName -> d
+    int mIndex -> e
+    int mBreadCrumbTitleRes -> f
+    java.lang.CharSequence mBreadCrumbTitleText -> g
+    int mBreadCrumbShortTitleRes -> h
+    java.lang.CharSequence mBreadCrumbShortTitleText -> i
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> android.support.v4.app.c:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
+    java.util.HashMap sClassMap -> P
+    int mState -> a
+    android.view.View mAnimatingAway -> b
+    int mStateAfterAnimating -> c
+    android.os.Bundle mSavedFragmentState -> d
+    android.util.SparseArray mSavedViewState -> e
+    int mIndex -> f
+    java.lang.String mWho -> g
+    android.os.Bundle mArguments -> h
+    android.support.v4.app.Fragment mTarget -> i
+    int mTargetIndex -> j
+    int mTargetRequestCode -> k
+    boolean mAdded -> l
+    boolean mRemoving -> m
+    boolean mResumed -> n
+    boolean mFromLayout -> o
+    boolean mInLayout -> p
+    boolean mRestored -> q
+    int mBackStackNesting -> r
+    android.support.v4.app.FragmentManagerImpl mFragmentManager -> s
+    android.support.v4.app.FragmentActivity mActivity -> t
+    android.support.v4.app.FragmentManagerImpl mChildFragmentManager -> u
+    android.support.v4.app.Fragment mParentFragment -> v
+    int mFragmentId -> w
+    int mContainerId -> x
+    java.lang.String mTag -> y
+    boolean mHidden -> z
+    boolean mDetached -> A
+    boolean mRetainInstance -> B
+    boolean mRetaining -> C
+    boolean mHasMenu -> D
+    boolean mMenuVisible -> E
+    boolean mCalled -> F
+    int mNextAnim -> G
+    android.view.ViewGroup mContainer -> H
+    android.view.View mView -> I
+    android.view.View mInnerView -> J
+    boolean mDeferStart -> K
+    boolean mUserVisibleHint -> L
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> M
+    boolean mLoadersStarted -> N
+    boolean mCheckedForLoaderManager -> O
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void restoreViewState$79e5e33f() -> a
+    void setIndex(int,android.support.v4.app.Fragment) -> a
+    boolean isInBackStack() -> b
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    android.content.res.Resources getResources() -> c
+    boolean isDetached() -> d
+    void onHiddenChanged$1385ff() -> e
+    void startActivity(android.content.Intent) -> a
+    void onActivityResult$6eb84b52() -> f
+    android.view.LayoutInflater getLayoutInflater$2ee30c11() -> g
+    void onInflate$423a76cd() -> h
+    void onAttach$63a22f9() -> i
+    android.view.animation.Animation onCreateAnimation$24236ca7() -> j
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void onViewCreated$65f1d89() -> k
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onLowMemory() -> onLowMemory
+    void onDestroy() -> l
+    void initState() -> m
+    void onDetach() -> n
+    void onDestroyOptionsMenu() -> o
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void performCreate(android.os.Bundle) -> a
+    android.view.View performCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> b
+    void performActivityCreated$79e5e33f() -> p
+    void performStart() -> q
+    void performResume() -> r
+    void performConfigurationChanged(android.content.res.Configuration) -> a
+    void performLowMemory() -> s
+    boolean performCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean performPrepareOptionsMenu(android.view.Menu) -> a
+    boolean performOptionsItemSelected(android.view.MenuItem) -> a
+    boolean performContextItemSelected(android.view.MenuItem) -> b
+    void performOptionsMenuClosed(android.view.Menu) -> b
+    void performSaveInstanceState(android.os.Bundle) -> b
+    void performPause() -> t
+    void performStop() -> u
+    void performReallyStop() -> v
+    void performDestroyView() -> w
+    void performDestroy() -> x
+android.support.v4.app.Fragment$1 -> android.support.v4.app.d:
+    android.support.v4.app.Fragment this$0 -> a
+    android.view.View findViewById(int) -> a
+android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.e:
+android.support.v4.app.Fragment$SavedState -> android.support.v4.app.Fragment$SavedState:
+    android.os.Bundle mState -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.f:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentActivity -> android.support.v4.app.FragmentActivity:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    android.support.v4.app.FragmentContainer mContainer -> c
+    boolean mCreated -> d
+    boolean mResumed -> e
+    boolean mStopped -> f
+    boolean mReallyStopped -> g
+    boolean mRetaining -> h
+    boolean mOptionsMenuInvalidated -> i
+    boolean mCheckedForLoaderManager -> j
+    boolean mLoadersStarted -> k
+    java.util.HashMap mAllLoaderManagers -> l
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> m
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onBackPressed() -> onBackPressed
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onLowMemory() -> onLowMemory
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    void onPause() -> onPause
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onResume() -> onResume
+    void onPostResume() -> onPostResume
+    void onResumeFragments() -> a
+    boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void supportInvalidateOptionsMenu() -> b
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    java.lang.String viewToString(android.view.View) -> a
+    void dumpViewHierarchy(java.lang.String,java.io.PrintWriter,android.view.View) -> a
+    void doReallyStop(boolean) -> a
+    void onAttachFragment$65850823() -> c
+    android.support.v4.app.FragmentManager getSupportFragmentManager() -> d
+    void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    void startActivityFromFragment$68747257(android.content.Intent) -> a
+    void invalidateSupportFragment(java.lang.String) -> a
+    android.support.v4.app.LoaderManagerImpl getLoaderManager$2cd5ab55(java.lang.String) -> b
+android.support.v4.app.FragmentActivity$1 -> android.support.v4.app.g:
+    android.support.v4.app.FragmentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+android.support.v4.app.FragmentActivity$2 -> android.support.v4.app.h:
+    android.support.v4.app.FragmentActivity this$0 -> a
+    android.view.View findViewById(int) -> a
+android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.i:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.j:
+    java.lang.Object activity -> a
+    java.lang.Object custom -> b
+    java.util.HashMap children -> c
+    java.util.ArrayList fragments -> d
+    java.util.HashMap loaders -> e
+android.support.v4.app.FragmentContainer -> android.support.v4.app.k:
+    android.view.View findViewById(int) -> a
+android.support.v4.app.FragmentManager -> android.support.v4.app.l:
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.m:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> b
+    java.util.ArrayList mPendingActions -> c
+    java.lang.Runnable[] mTmpActions -> d
+    boolean mExecutingActions -> e
+    java.util.ArrayList mActive -> f
+    java.util.ArrayList mAdded -> g
+    java.util.ArrayList mAvailIndices -> h
+    java.util.ArrayList mBackStack -> i
+    java.util.ArrayList mCreatedMenus -> j
+    java.util.ArrayList mBackStackIndices -> k
+    java.util.ArrayList mAvailBackStackIndices -> l
+    java.util.ArrayList mBackStackChangeListeners -> m
+    int mCurState -> n
+    android.support.v4.app.FragmentActivity mActivity -> o
+    android.support.v4.app.FragmentContainer mContainer -> p
+    android.support.v4.app.Fragment mParent -> q
+    boolean mNeedMenuInvalidate -> r
+    boolean mStateSaved -> s
+    boolean mDestroyed -> t
+    java.lang.String mNoTransactionsBecause -> u
+    boolean mHavePendingDeferredStart -> v
+    android.os.Bundle mStateBundle -> w
+    android.util.SparseArray mStateArray -> x
+    java.lang.Runnable mExecCommit -> y
+    android.view.animation.Interpolator DECELERATE_QUINT -> z
+    android.view.animation.Interpolator DECELERATE_CUBIC -> A
+    android.view.animation.Interpolator ACCELERATE_QUINT -> B
+    android.view.animation.Interpolator ACCELERATE_CUBIC -> C
+    void throwException(java.lang.RuntimeException) -> a
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    boolean popBackStackImmediate() -> c
+    android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    android.view.animation.Animation makeOpenCloseAnimation$376f30fd(float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation$424ea1bd(float,float) -> a
+    android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    void moveToState(android.support.v4.app.Fragment,int,int,int,boolean) -> a
+    void moveToState(android.support.v4.app.Fragment) -> a
+    void moveToState$2563266(int) -> d
+    void moveToState(int,int,int,boolean) -> a
+    void startPendingDeferredFragments() -> r
+    void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    void checkStateLoss() -> s
+    void enqueueAction$574583f(java.lang.Runnable) -> a
+    int allocBackStackIndex(android.support.v4.app.BackStackRecord) -> a
+    void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    void freeBackStackIndex(int) -> b
+    boolean execPendingActions() -> d
+    void reportBackStackChanged() -> t
+    void addBackStackState(android.support.v4.app.BackStackRecord) -> b
+    java.util.ArrayList retainNonConfig() -> e
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> b
+    android.os.Parcelable saveAllState() -> f
+    void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    void attachActivity(android.support.v4.app.FragmentActivity,android.support.v4.app.FragmentContainer,android.support.v4.app.Fragment) -> a
+    void noteStateNotSaved() -> g
+    void dispatchCreate() -> h
+    void dispatchActivityCreated() -> i
+    void dispatchStart() -> j
+    void dispatchResume() -> k
+    void dispatchPause() -> l
+    void dispatchStop() -> m
+    void dispatchReallyStop() -> n
+    void dispatchDestroyView() -> o
+    void dispatchDestroy() -> p
+    void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    void dispatchLowMemory() -> q
+    boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean dispatchPrepareOptionsMenu(android.view.Menu) -> a
+    boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
+    boolean dispatchContextItemSelected(android.view.MenuItem) -> b
+    void dispatchOptionsMenuClosed(android.view.Menu) -> b
+    int reverseTransit(int) -> c
+android.support.v4.app.FragmentManagerImpl$1 -> android.support.v4.app.n:
+    android.support.v4.app.FragmentManagerImpl this$0 -> a
+    void run() -> run
+android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.o:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> android.support.v4.app.FragmentManagerState:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.p:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
+    java.lang.String mClassName -> a
+    int mIndex -> b
+    boolean mFromLayout -> c
+    int mFragmentId -> d
+    int mContainerId -> e
+    java.lang.String mTag -> f
+    boolean mRetainInstance -> g
+    boolean mDetached -> h
+    android.os.Bundle mArguments -> i
+    android.os.Bundle mSavedFragmentState -> j
+    android.support.v4.app.Fragment mInstance -> k
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity,android.support.v4.app.Fragment) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> android.support.v4.app.q:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTabHost -> android.support.v4.app.FragmentTabHost:
+    java.util.ArrayList mTabs -> a
+    android.widget.FrameLayout mRealTabContent -> b
+    android.content.Context mContext -> c
+    android.support.v4.app.FragmentManager mFragmentManager -> d
+    int mContainerId -> e
+    android.widget.TabHost$OnTabChangeListener mOnTabChangeListener -> f
+    android.support.v4.app.FragmentTabHost$TabInfo mLastTab -> g
+    boolean mAttached -> h
+    void setup() -> setup
+    void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener) -> setOnTabChangedListener
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void onTabChanged(java.lang.String) -> onTabChanged
+    android.support.v4.app.FragmentTransaction doTabChanged(java.lang.String,android.support.v4.app.FragmentTransaction) -> a
+android.support.v4.app.FragmentTabHost$SavedState -> android.support.v4.app.FragmentTabHost$SavedState:
+    java.lang.String curTab -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.app.FragmentTabHost$SavedState$1 -> android.support.v4.app.r:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTabHost$TabInfo -> android.support.v4.app.s:
+    java.lang.String tag -> a
+    java.lang.Class clss -> b
+    android.os.Bundle args -> c
+    android.support.v4.app.Fragment fragment -> d
+    android.support.v4.app.Fragment access$102(android.support.v4.app.FragmentTabHost$TabInfo,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment access$100(android.support.v4.app.FragmentTabHost$TabInfo) -> a
+    java.lang.String access$200(android.support.v4.app.FragmentTabHost$TabInfo) -> b
+    java.lang.Class access$300(android.support.v4.app.FragmentTabHost$TabInfo) -> c
+    android.os.Bundle access$400(android.support.v4.app.FragmentTabHost$TabInfo) -> d
+android.support.v4.app.FragmentTransaction -> android.support.v4.app.t:
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    android.support.v4.app.FragmentTransaction replace$2fdc650e(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> b
+    android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> c
+    android.support.v4.app.FragmentTransaction setCustomAnimations$228f0801() -> a
+    int commit() -> b
+android.support.v4.app.LoaderManager -> android.support.v4.app.u:
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.v:
+    android.support.v4.content.Loader onCreateLoader$e57f803() -> a
+android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.w:
+    boolean DEBUG -> a
+    android.support.v4.util.SparseArrayCompat mLoaders -> b
+    android.support.v4.util.SparseArrayCompat mInactiveLoaders -> c
+    java.lang.String mWho -> d
+    android.support.v4.app.FragmentActivity mActivity -> e
+    boolean mStarted -> f
+    boolean mRetaining -> g
+    void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    void doStart() -> b
+    void doStop() -> c
+    void doRetain() -> d
+    void finishRetain() -> e
+    void doReportNextStart() -> f
+    void doReportStart() -> g
+    void doDestroy() -> h
+    java.lang.String toString() -> toString
+    void dump$ec96877$79f041d6(java.lang.String,java.io.PrintWriter) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.x:
+    int mId -> a
+    android.os.Bundle mArgs -> b
+    android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> c
+    android.support.v4.content.Loader mLoader -> d
+    boolean mHaveData -> e
+    boolean mDeliveredData -> f
+    java.lang.Object mData -> g
+    boolean mStarted -> h
+    boolean mRetaining -> i
+    boolean mRetainingStarted -> j
+    boolean mReportNextStart -> k
+    boolean mDestroyed -> l
+    boolean mListenerRegistered -> m
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo mPendingLoader -> n
+    android.support.v4.app.LoaderManagerImpl this$0 -> o
+    void stop() -> a
+    void destroy() -> b
+    void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump$ec96877$79f041d6(java.lang.String,java.io.PrintWriter) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.y:
+    android.view.ViewGroup wrap(android.view.View) -> a
+    void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> android.support.v4.app.z:
+android.support.v4.content.Loader -> android.support.v4.a.a:
+    int mId -> a
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
+    boolean mStarted -> c
+    boolean mAbandoned -> d
+    boolean mReset -> e
+    boolean mContentChanged -> f
+    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void startLoading() -> a
+    void stopLoading() -> b
+    void reset() -> c
+    java.lang.String toString() -> toString
+    void dump$ec96877(java.lang.String,java.io.PrintWriter) -> a
+android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.a.b:
+android.support.v4.os.ParcelableCompat -> android.support.v4.b.a:
+    android.os.Parcelable$Creator newCreator(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.os.ParcelableCompat$CompatCreator -> android.support.v4.b.b:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorCallbacks -> android.support.v4.b.c:
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+    java.lang.Object[] newArray(int) -> a
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2 -> android.support.v4.b.d:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.util.DebugUtils -> android.support.v4.c.a:
+    void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+android.support.v4.util.LogWriter -> android.support.v4.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void flushBuilder() -> a
+android.support.v4.util.SparseArrayCompat -> android.support.v4.c.c:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    void gc() -> c
+    int size() -> a
+    int keyAt(int) -> a
+    java.lang.Object valueAt(int) -> b
+    void clear() -> b
+android.support.v4.view.AccessibilityDelegateCompat -> android.support.v4.view.a:
+    android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl IMPL -> b
+    java.lang.Object DEFAULT_DELEGATE -> c
+    java.lang.Object mBridge -> a
+    java.lang.Object getBridge() -> a
+    void sendAccessibilityEvent(android.view.View,int) -> a
+    void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat) -> a
+    boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View) -> a
+    boolean performAccessibilityAction(android.view.View,int,android.os.Bundle) -> a
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl -> android.support.v4.view.b:
+    java.lang.Object newAccessiblityDelegateDefaultImpl() -> a
+    java.lang.Object newAccessiblityDelegateBridge(android.support.v4.view.AccessibilityDelegateCompat) -> a
+    boolean dispatchPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void onInitializeAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void onInitializeAccessibilityNodeInfo(java.lang.Object,android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat) -> a
+    void onPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean onRequestSendAccessibilityEvent(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void sendAccessibilityEvent(java.lang.Object,android.view.View,int) -> a
+    void sendAccessibilityEventUnchecked(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1 -> android.support.v4.view.c:
+    android.support.v4.view.AccessibilityDelegateCompat val$compat -> a
+    android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl this$0 -> b
+    boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object) -> a
+    void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void sendAccessibilityEvent(android.view.View,int) -> a
+    void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl -> android.support.v4.view.d:
+    java.lang.Object newAccessiblityDelegateDefaultImpl() -> a
+    java.lang.Object newAccessiblityDelegateBridge(android.support.v4.view.AccessibilityDelegateCompat) -> a
+    boolean dispatchPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void onInitializeAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void onInitializeAccessibilityNodeInfo(java.lang.Object,android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat) -> a
+    void onPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean onRequestSendAccessibilityEvent(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void sendAccessibilityEvent(java.lang.Object,android.view.View,int) -> a
+    void sendAccessibilityEventUnchecked(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(java.lang.Object,android.view.View) -> a
+    boolean performAccessibilityAction(java.lang.Object,android.view.View,int,android.os.Bundle) -> a
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl -> android.support.v4.view.e:
+    java.lang.Object newAccessiblityDelegateBridge(android.support.v4.view.AccessibilityDelegateCompat) -> a
+    android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(java.lang.Object,android.view.View) -> a
+    boolean performAccessibilityAction(java.lang.Object,android.view.View,int,android.os.Bundle) -> a
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl$1 -> android.support.v4.view.f:
+    android.support.v4.view.AccessibilityDelegateCompat val$compat -> a
+    android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl this$0 -> b
+    boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object) -> a
+    void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void sendAccessibilityEvent(android.view.View,int) -> a
+    void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    java.lang.Object getAccessibilityNodeProvider(android.view.View) -> a
+    boolean performAccessibilityAction(android.view.View,int,android.os.Bundle) -> a
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateStubImpl -> android.support.v4.view.g:
+    java.lang.Object newAccessiblityDelegateDefaultImpl() -> a
+    java.lang.Object newAccessiblityDelegateBridge(android.support.v4.view.AccessibilityDelegateCompat) -> a
+    boolean dispatchPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void onInitializeAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void onInitializeAccessibilityNodeInfo(java.lang.Object,android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat) -> a
+    void onPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean onRequestSendAccessibilityEvent(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void sendAccessibilityEvent(java.lang.Object,android.view.View,int) -> a
+    void sendAccessibilityEventUnchecked(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(java.lang.Object,android.view.View) -> a
+    boolean performAccessibilityAction(java.lang.Object,android.view.View,int,android.os.Bundle) -> a
+android.support.v4.view.AccessibilityDelegateCompatIcs -> android.support.v4.view.h:
+android.support.v4.view.AccessibilityDelegateCompatIcs$1 -> android.support.v4.view.i:
+    android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge val$bridge -> a
+    boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> onInitializeAccessibilityEvent
+    void onInitializeAccessibilityNodeInfo(android.view.View,android.view.accessibility.AccessibilityNodeInfo) -> onInitializeAccessibilityNodeInfo
+    void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> onPopulateAccessibilityEvent
+    boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> onRequestSendAccessibilityEvent
+    void sendAccessibilityEvent(android.view.View,int) -> sendAccessibilityEvent
+    void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent) -> sendAccessibilityEventUnchecked
+android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge -> android.support.v4.view.j:
+    boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object) -> a
+    void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void sendAccessibilityEvent(android.view.View,int) -> a
+    void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+android.support.v4.view.AccessibilityDelegateCompatJellyBean -> android.support.v4.view.k:
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$1 -> android.support.v4.view.l:
+    android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean val$bridge -> a
+    boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> onInitializeAccessibilityEvent
+    void onInitializeAccessibilityNodeInfo(android.view.View,android.view.accessibility.AccessibilityNodeInfo) -> onInitializeAccessibilityNodeInfo
+    void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> onPopulateAccessibilityEvent
+    boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> onRequestSendAccessibilityEvent
+    void sendAccessibilityEvent(android.view.View,int) -> sendAccessibilityEvent
+    void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent) -> sendAccessibilityEventUnchecked
+    android.view.accessibility.AccessibilityNodeProvider getAccessibilityNodeProvider(android.view.View) -> getAccessibilityNodeProvider
+    boolean performAccessibilityAction(android.view.View,int,android.os.Bundle) -> performAccessibilityAction
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean -> android.support.v4.view.m:
+    boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object) -> a
+    void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void sendAccessibilityEvent(android.view.View,int) -> a
+    void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    java.lang.Object getAccessibilityNodeProvider(android.view.View) -> a
+    boolean performAccessibilityAction(android.view.View,int,android.os.Bundle) -> a
+android.support.v4.view.KeyEventCompat -> android.support.v4.view.n:
+    android.support.v4.view.KeyEventCompat$KeyEventVersionImpl IMPL -> a
+    boolean hasModifiers$79c6ddc0(android.view.KeyEvent) -> a
+    boolean hasNoModifiers(android.view.KeyEvent) -> b
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl -> android.support.v4.view.o:
+    int metaStateFilterDirectionalModifiers$2e71581f(int,int,int,int) -> a
+    int normalizeMetaState(int) -> c
+    boolean metaStateHasModifiers$255f299(int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl -> android.support.v4.view.p:
+    boolean metaStateHasModifiers$255f299(int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl -> android.support.v4.view.q:
+    boolean metaStateHasModifiers$255f299(int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.MotionEventCompat -> android.support.v4.view.r:
+    android.support.v4.view.MotionEventCompat$MotionEventVersionImpl IMPL -> a
+    int getActionIndex(android.view.MotionEvent) -> a
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.s:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.t:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.u:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.PagerAdapter -> android.support.v4.view.v:
+    android.database.DataSetObservable mObservable -> a
+    int getCount() -> a
+    java.lang.Object instantiateItem(android.view.ViewGroup,int) -> a
+    void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> a
+    java.lang.Object instantiateItem(android.view.View,int) -> a
+    void destroyItem$7e55ba3e(android.view.View,int) -> b
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+android.support.v4.view.PagerTabStrip -> android.support.v4.view.PagerTabStrip:
+    int mIndicatorColor -> f
+    int mIndicatorHeight -> g
+    int mMinPaddingBottom -> h
+    int mMinTextSpacing -> i
+    int mMinStripHeight -> j
+    int mTabPadding -> k
+    android.graphics.Paint mTabPaint -> l
+    android.graphics.Rect mTempRect -> m
+    int mTabAlpha -> n
+    boolean mDrawFullUnderline -> o
+    boolean mDrawFullUnderlineSet -> p
+    int mFullUnderlineHeight -> q
+    boolean mIgnoreTap -> r
+    float mInitialMotionX -> s
+    float mInitialMotionY -> t
+    int mTouchSlop -> u
+    void setPadding(int,int,int,int) -> setPadding
+    void setTextSpacing(int) -> a
+    void setBackgroundDrawable(android.graphics.drawable.Drawable) -> setBackgroundDrawable
+    void setBackgroundColor(int) -> setBackgroundColor
+    void setBackgroundResource(int) -> setBackgroundResource
+    int getMinHeight() -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void updateTextPositions(int,float,boolean) -> a
+android.support.v4.view.PagerTabStrip$1 -> android.support.v4.view.w:
+    android.support.v4.view.PagerTabStrip this$0 -> a
+    void onClick(android.view.View) -> onClick
+android.support.v4.view.PagerTabStrip$2 -> android.support.v4.view.x:
+    android.support.v4.view.PagerTabStrip this$0 -> a
+    void onClick(android.view.View) -> onClick
+android.support.v4.view.PagerTitleStrip -> android.support.v4.view.PagerTitleStrip:
+    android.support.v4.view.ViewPager mPager -> a
+    android.widget.TextView mPrevText -> b
+    android.widget.TextView mCurrText -> c
+    android.widget.TextView mNextText -> d
+    int mLastKnownCurrentPage -> f
+    float mLastKnownPositionOffset -> g
+    int mScaledTextSpacing -> h
+    int mGravity -> i
+    boolean mUpdatingText -> j
+    boolean mUpdatingPositions -> k
+    android.support.v4.view.PagerTitleStrip$PageListener mPageListener -> l
+    java.lang.ref.WeakReference mWatchingAdapter -> m
+    int[] ATTRS -> n
+    int[] TEXT_ATTRS -> o
+    int mNonPrimaryAlpha -> p
+    int mTextColor -> e
+    android.support.v4.view.PagerTitleStrip$PagerTitleStripImpl IMPL -> q
+    void setSingleLineAllCaps(android.widget.TextView) -> a
+    void setTextSpacing(int) -> a
+    int getTextSpacing() -> b
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void updateText(int,android.support.v4.view.PagerAdapter) -> a
+    void requestLayout() -> requestLayout
+    void updateAdapter(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
+    void updateTextPositions(int,float,boolean) -> a
+    void onMeasure(int,int) -> onMeasure
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    int getMinHeight() -> a
+    float access$100(android.support.v4.view.PagerTitleStrip) -> a
+android.support.v4.view.PagerTitleStrip$PageListener -> android.support.v4.view.y:
+    int mScrollState -> b
+    android.support.v4.view.PagerTitleStrip this$0 -> a
+    void onPageScrolled$486775f1(int,float) -> a
+    void onPageSelected(int) -> a
+    void onPageScrollStateChanged(int) -> b
+    void onAdapterChanged(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
+    void onChanged() -> onChanged
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImpl -> android.support.v4.view.z:
+    void setSingleLineAllCaps(android.widget.TextView) -> a
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplBase -> android.support.v4.view.aa:
+    void setSingleLineAllCaps(android.widget.TextView) -> a
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplIcs -> android.support.v4.view.ab:
+    void setSingleLineAllCaps(android.widget.TextView) -> a
+android.support.v4.view.PagerTitleStripIcs -> android.support.v4.view.ac:
+android.support.v4.view.PagerTitleStripIcs$SingleLineAllCapsTransform -> android.support.v4.view.ad:
+    java.util.Locale mLocale -> a
+    java.lang.CharSequence getTransformation(java.lang.CharSequence,android.view.View) -> getTransformation
+android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.ae:
+    android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl IMPL -> a
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.af:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.ag:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.ah:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.ViewCompat -> android.support.v4.view.ai:
+    android.support.v4.view.ViewCompat$ViewCompatImpl IMPL -> a
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    int getImportantForAccessibility(android.view.View) -> c
+    void setImportantForAccessibility$5359dc9a(android.view.View) -> d
+    void setLayerType$7672597b(android.view.View,int) -> b
+android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view.aj:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    long getFrameTime() -> a
+    int getImportantForAccessibility(android.view.View) -> c
+    void setImportantForAccessibility$5359dc9a(android.view.View) -> d
+    void setLayerType$7672597b(android.view.View,int) -> b
+android.support.v4.view.ViewCompat$GBViewCompatImpl -> android.support.v4.view.ak:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompat$HCViewCompatImpl -> android.support.v4.view.al:
+    long getFrameTime() -> a
+    void setLayerType$7672597b(android.view.View,int) -> b
+android.support.v4.view.ViewCompat$ICSViewCompatImpl -> android.support.v4.view.am:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat) -> a
+android.support.v4.view.ViewCompat$JBViewCompatImpl -> android.support.v4.view.an:
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    int getImportantForAccessibility(android.view.View) -> c
+    void setImportantForAccessibility$5359dc9a(android.view.View) -> d
+android.support.v4.view.ViewCompat$JbMr1ViewCompatImpl -> android.support.v4.view.ao:
+android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.ap:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    int getImportantForAccessibility(android.view.View) -> c
+    void setImportantForAccessibility$5359dc9a(android.view.View) -> d
+    void setLayerType$7672597b(android.view.View,int) -> b
+android.support.v4.view.ViewConfigurationCompat -> android.support.v4.view.aq:
+    android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl IMPL -> a
+    int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewConfigurationCompat$BaseViewConfigurationVersionImpl -> android.support.v4.view.ar:
+    int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewConfigurationCompat$FroyoViewConfigurationVersionImpl -> android.support.v4.view.as:
+    int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl -> android.support.v4.view.at:
+    int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
+    int[] LAYOUT_ATTRS -> a
+    java.util.Comparator COMPARATOR -> b
+    android.view.animation.Interpolator sInterpolator -> c
+    java.util.ArrayList mItems -> d
+    android.support.v4.view.ViewPager$ItemInfo mTempItem -> e
+    android.graphics.Rect mTempRect -> f
+    android.support.v4.view.PagerAdapter mAdapter -> g
+    int mCurItem -> h
+    int mRestoredCurItem -> i
+    android.os.Parcelable mRestoredAdapterState -> j
+    java.lang.ClassLoader mRestoredClassLoader -> k
+    android.widget.Scroller mScroller -> l
+    android.support.v4.view.ViewPager$PagerObserver mObserver -> m
+    int mPageMargin -> n
+    android.graphics.drawable.Drawable mMarginDrawable -> o
+    int mTopPageBounds -> p
+    int mBottomPageBounds -> q
+    float mFirstOffset -> r
+    float mLastOffset -> s
+    int mChildWidthMeasureSpec -> t
+    int mChildHeightMeasureSpec -> u
+    boolean mInLayout -> v
+    boolean mScrollingCacheEnabled -> w
+    boolean mPopulatePending -> x
+    int mOffscreenPageLimit -> y
+    boolean mIsBeingDragged -> z
+    boolean mIsUnableToDrag -> A
+    int mDefaultGutterSize -> B
+    int mGutterSize -> C
+    int mTouchSlop -> D
+    float mLastMotionX -> E
+    float mLastMotionY -> F
+    float mInitialMotionX -> G
+    float mInitialMotionY -> H
+    int mActivePointerId -> I
+    android.view.VelocityTracker mVelocityTracker -> J
+    int mMinimumVelocity -> K
+    int mMaximumVelocity -> L
+    int mFlingDistance -> M
+    int mCloseEnough -> N
+    boolean mFakeDragging -> O
+    android.support.v4.widget.EdgeEffectCompat mLeftEdge -> P
+    android.support.v4.widget.EdgeEffectCompat mRightEdge -> Q
+    boolean mFirstLayout -> R
+    boolean mNeedCalculatePageOffsets -> S
+    boolean mCalledSuper -> T
+    int mDecorChildCount -> U
+    android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> V
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> W
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> Z
+    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> aa
+    int mDrawingOrder -> ab
+    java.util.ArrayList mDrawingOrderedChildren -> ac
+    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> ad
+    java.lang.Runnable mEndScrollRunnable -> ae
+    int mScrollState -> af
+    void initViewPager() -> f
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void setScrollState(int) -> b
+    void setAdapter(android.support.v4.view.PagerAdapter) -> a
+    android.support.v4.view.PagerAdapter getAdapter() -> a
+    void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener) -> a
+    void setCurrentItem(int) -> a
+    void setCurrentItem(int,boolean) -> a
+    int getCurrentItem() -> b
+    void setCurrentItemInternal(int,boolean,boolean) -> a
+    void setCurrentItemInternal(int,boolean,boolean,int) -> a
+    void scrollToItem(int,boolean,int,boolean) -> a
+    void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener) -> a
+    int getChildDrawingOrder(int,int) -> getChildDrawingOrder
+    android.support.v4.view.ViewPager$OnPageChangeListener setInternalPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener) -> b
+    boolean verifyDrawable(android.graphics.drawable.Drawable) -> verifyDrawable
+    void drawableStateChanged() -> drawableStateChanged
+    android.support.v4.view.ViewPager$ItemInfo addNewItem(int,int) -> a
+    void dataSetChanged() -> c
+    void populate() -> d
+    void populate(int) -> c
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
+    void removeView(android.view.View) -> removeView
+    android.support.v4.view.ViewPager$ItemInfo infoForChild(android.view.View) -> a
+    android.support.v4.view.ViewPager$ItemInfo infoForAnyChild(android.view.View) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForPosition(int) -> d
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onMeasure(int,int) -> onMeasure
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void computeScroll() -> computeScroll
+    boolean pageScrolled(int) -> e
+    void onPageScrolled$486775f1(int,float) -> a
+    void completeScroll(boolean) -> a
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean performDrag(float) -> a
+    android.support.v4.view.ViewPager$ItemInfo infoForCurrentScrollPosition() -> g
+    void draw(android.graphics.Canvas) -> draw
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSecondaryPointerUp(android.view.MotionEvent) -> a
+    void endDrag() -> h
+    void setScrollingCacheEnabled(boolean) -> b
+    boolean canScroll(android.view.View,boolean,int,int,int) -> a
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean arrowScroll(int) -> f
+    android.graphics.Rect getChildRectInPagerCoordinates(android.graphics.Rect,android.view.View) -> a
+    boolean pageLeft() -> i
+    void addFocusables(java.util.ArrayList,int,int) -> addFocusables
+    void addTouchables(java.util.ArrayList) -> addTouchables
+    boolean onRequestFocusInDescendants(int,android.graphics.Rect) -> onRequestFocusInDescendants
+    boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    void access$000$b020504(android.support.v4.view.ViewPager) -> a
+    android.support.v4.view.PagerAdapter access$200(android.support.v4.view.ViewPager) -> b
+    int access$300(android.support.v4.view.ViewPager) -> c
+    int[] access$400() -> e
+android.support.v4.view.ViewPager$1 -> android.support.v4.view.au:
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.view.ViewPager$2 -> android.support.v4.view.av:
+    float getInterpolation(float) -> getInterpolation
+android.support.v4.view.ViewPager$3 -> android.support.v4.view.aw:
+    android.support.v4.view.ViewPager this$0 -> a
+    void run() -> run
+android.support.v4.view.ViewPager$Decor -> android.support.v4.view.ax:
+android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.ay:
+    java.lang.Object object -> a
+    int position -> b
+    boolean scrolling -> c
+    float widthFactor -> d
+    float offset -> e
+android.support.v4.view.ViewPager$LayoutParams -> android.support.v4.view.ViewPager$LayoutParams:
+    boolean isDecor -> a
+    int gravity -> b
+    float widthFactor -> c
+    boolean needsMeasure -> d
+    int position -> e
+    int childIndex -> f
+android.support.v4.view.ViewPager$MyAccessibilityDelegate -> android.support.v4.view.az:
+    android.support.v4.view.ViewPager this$0 -> b
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat) -> a
+    boolean performAccessibilityAction(android.view.View,int,android.os.Bundle) -> a
+android.support.v4.view.ViewPager$OnAdapterChangeListener -> android.support.v4.view.ba:
+    void onAdapterChanged(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
+android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.bb:
+    void onPageScrolled$486775f1(int,float) -> a
+    void onPageSelected(int) -> a
+    void onPageScrollStateChanged(int) -> b
+android.support.v4.view.ViewPager$PageTransformer -> android.support.v4.view.bc:
+android.support.v4.view.ViewPager$PagerObserver -> android.support.v4.view.bd:
+    android.support.v4.view.ViewPager this$0 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+android.support.v4.view.ViewPager$SavedState -> android.support.v4.view.ViewPager$SavedState:
+    int position -> a
+    android.os.Parcelable adapterState -> b
+    java.lang.ClassLoader loader -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.be:
+    java.lang.Object[] newArray(int) -> a
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+android.support.v4.view.ViewPager$ViewPositionComparator -> android.support.v4.view.bf:
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat -> android.support.v4.view.a.a:
+    android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl IMPL -> a
+    java.lang.Object mInfo -> b
+    java.lang.Object getInfo() -> a
+    void addAction(int) -> a
+    void setScrollable(boolean) -> a
+    void setClassName(java.lang.CharSequence) -> a
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl -> android.support.v4.view.a.b:
+    void addAction(java.lang.Object,int) -> a
+    void setClassName(java.lang.Object,java.lang.CharSequence) -> a
+    void setScrollable(java.lang.Object,boolean) -> a
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl -> android.support.v4.view.a.c:
+    void addAction(java.lang.Object,int) -> a
+    void setScrollable(java.lang.Object,boolean) -> a
+    void setClassName(java.lang.Object,java.lang.CharSequence) -> a
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoJellybeanImpl -> android.support.v4.view.a.d:
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl -> android.support.v4.view.a.e:
+    void addAction(java.lang.Object,int) -> a
+    void setClassName(java.lang.Object,java.lang.CharSequence) -> a
+    void setScrollable(java.lang.Object,boolean) -> a
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat -> android.support.v4.view.a.f:
+    android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl IMPL -> a
+    java.lang.Object mProvider -> b
+    java.lang.Object getProvider() -> a
+    android.support.v4.view.accessibility.AccessibilityNodeInfoCompat createAccessibilityNodeInfo$f3a5639() -> b
+    boolean performAction$5985f823() -> c
+    java.util.List findAccessibilityNodeInfosByText$2393931d() -> d
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl -> android.support.v4.view.a.g:
+    java.lang.Object newAccessibilityNodeProviderBridge(android.support.v4.view.accessibility.AccessibilityNodeProviderCompat) -> a
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl -> android.support.v4.view.a.h:
+    java.lang.Object newAccessibilityNodeProviderBridge(android.support.v4.view.accessibility.AccessibilityNodeProviderCompat) -> a
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl$1 -> android.support.v4.view.a.i:
+    android.support.v4.view.accessibility.AccessibilityNodeProviderCompat val$compat -> a
+    android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl this$0 -> b
+    boolean performAction$5985f823() -> a
+    java.util.List findAccessibilityNodeInfosByText$2393931d() -> b
+    java.lang.Object createAccessibilityNodeInfo$54cf32c4() -> c
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl -> android.support.v4.view.a.j:
+    java.lang.Object newAccessibilityNodeProviderBridge(android.support.v4.view.accessibility.AccessibilityNodeProviderCompat) -> a
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean -> android.support.v4.view.a.k:
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$1 -> android.support.v4.view.a.l:
+    android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge val$bridge -> a
+    android.view.accessibility.AccessibilityNodeInfo createAccessibilityNodeInfo(int) -> createAccessibilityNodeInfo
+    java.util.List findAccessibilityNodeInfosByText(java.lang.String,int) -> findAccessibilityNodeInfosByText
+    boolean performAction(int,int,android.os.Bundle) -> performAction
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge -> android.support.v4.view.a.m:
+    java.lang.Object createAccessibilityNodeInfo$54cf32c4() -> c
+    boolean performAction$5985f823() -> a
+    java.util.List findAccessibilityNodeInfosByText$2393931d() -> b
+android.support.v4.widget.EdgeEffectCompat -> android.support.v4.d.a:
+    java.lang.Object mEdgeEffect -> a
+    android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl IMPL -> b
+    void setSize(int,int) -> a
+    boolean isFinished() -> a
+    void finish() -> b
+    boolean onPull(float) -> a
+    boolean onRelease() -> c
+    boolean draw(android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl -> android.support.v4.d.b:
+    java.lang.Object newEdgeEffect(android.content.Context) -> a
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl -> android.support.v4.d.c:
+    java.lang.Object newEdgeEffect(android.content.Context) -> a
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl -> android.support.v4.d.d:
+    java.lang.Object newEdgeEffect(android.content.Context) -> a
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+com.immomo.momo.android.BaseActivity -> com.immomo.momo.android.BaseActivity:
+    com.immomo.momo.android.BaseApplication mApplication -> n
+    com.immomo.momo.android.util.NetWorkUtils mNetWorkUtils -> o
+    com.immomo.momo.android.dialog.FlippingLoadingDialog mLoadingDialog -> p
+    int mScreenWidth -> q
+    int mScreenHeight -> r
+    float mDensity -> s
+    java.util.List mAsyncTasks -> t
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void putAsyncTask(android.os.AsyncTask) -> a
+    void clearAsyncTask() -> e
+    void showLoadingDialog(java.lang.String) -> c
+    void dismissLoadingDialog() -> f
+    void showCustomToast(java.lang.String) -> d
+    void startActivity(java.lang.Class) -> a
+com.immomo.momo.android.BaseApplication -> com.immomo.momo.android.BaseApplication:
+    android.graphics.Bitmap mDefaultAvatar -> f
+    java.util.Map mAvatarCache -> a
+    java.util.Map mPhotoOriginalCache -> b
+    java.util.Map mPhotoThumbnailCache -> c
+    java.util.List mNearByPeoples -> d
+    java.util.List mNearByGroups -> e
+    void onCreate() -> onCreate
+    void onLowMemory() -> onLowMemory
+    void onTerminate() -> onTerminate
+    android.graphics.Bitmap getAvatar(java.lang.String) -> a
+    android.graphics.Bitmap getPhotoOriginal(java.lang.String) -> b
+    android.graphics.Bitmap getPhotoThumbnail(java.lang.String) -> c
+com.immomo.momo.android.BaseArrayListAdapter -> com.immomo.momo.android.a:
+    android.content.Context mContext -> a
+    android.view.LayoutInflater mInflater -> b
+    java.util.List mDatas -> c
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.immomo.momo.android.BaseDialog -> com.immomo.momo.android.b:
+    android.content.Context mContext -> a
+    android.widget.LinearLayout mLayoutRoot -> b
+    android.widget.LinearLayout mLayoutTop -> c
+    android.widget.LinearLayout mLayoutTitle -> d
+    com.immomo.momo.android.view.HandyTextView mHtvTitle -> e
+    android.view.View mViewTitleLine -> f
+    android.widget.LinearLayout mLayoutContent -> g
+    com.immomo.momo.android.view.HandyTextView mHtvMessage -> h
+    android.widget.LinearLayout mLayoutBottom -> i
+    android.widget.Button mBtnButton1 -> j
+    android.widget.Button mBtnButton2 -> k
+    android.widget.Button mBtnButton3 -> l
+    com.immomo.momo.android.BaseDialog mBaseDialog -> m
+    android.content.DialogInterface$OnClickListener mOnClickListener1 -> n
+    android.content.DialogInterface$OnClickListener mOnClickListener2 -> o
+    android.content.DialogInterface$OnClickListener mOnClickListener3 -> p
+    void setDialogContentView(int) -> a
+    com.immomo.momo.android.BaseDialog getDialog(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.content.DialogInterface$OnClickListener) -> a
+    com.immomo.momo.android.BaseDialog getDialog(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.content.DialogInterface$OnClickListener,java.lang.CharSequence,android.content.DialogInterface$OnClickListener) -> a
+    com.immomo.momo.android.BaseDialog getDialog$309f0a2c(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.content.DialogInterface$OnClickListener,java.lang.CharSequence,android.content.DialogInterface$OnClickListener) -> b
+    void setTitle(java.lang.CharSequence) -> setTitle
+    void setButton1(java.lang.CharSequence,android.content.DialogInterface$OnClickListener) -> a
+    void setButton2(java.lang.CharSequence,android.content.DialogInterface$OnClickListener) -> b
+    void setButton1Background$13462e() -> a
+    void setTitleLineVisibility(int) -> b
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.BaseFragment -> com.immomo.momo.android.c:
+    com.immomo.momo.android.BaseApplication mApplication -> P
+    android.app.Activity mActivity -> Q
+    android.content.Context mContext -> R
+    android.view.View mView -> S
+    com.immomo.momo.android.util.NetWorkUtils mNetWorkUtils -> T
+    com.immomo.momo.android.dialog.FlippingLoadingDialog mLoadingDialog -> U
+    int mScreenWidth -> V
+    int mScreenHeight -> W
+    float mDensity -> X
+    java.util.List mAsyncTasks -> Y
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void onDestroy() -> l
+    void initViews() -> y
+    void initEvents() -> z
+    void init() -> A
+    android.view.View findViewById(int) -> a
+    void putAsyncTask(android.os.AsyncTask) -> a
+    void clearAsyncTask() -> B
+    void showLoadingDialog(java.lang.String) -> a
+    void dismissLoadingDialog() -> C
+    void showCustomToast(java.lang.String) -> b
+com.immomo.momo.android.BaseObjectListAdapter -> com.immomo.momo.android.d:
+    com.immomo.momo.android.BaseApplication mApplication -> a
+    android.content.Context mContext -> b
+    android.view.LayoutInflater mInflater -> c
+    java.util.List mDatas -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.immomo.momo.android.BasePopupWindow -> com.immomo.momo.android.BasePopupWindow:
+    android.view.View mContentView -> a
+    com.immomo.momo.android.BasePopupWindow$onSubmitClickListener mOnSubmitClickListener -> b
+    void initViews() -> a
+    void initEvents() -> b
+    void init() -> c
+    android.view.View findViewById(int) -> a
+    void showViewTopCenter(android.view.View) -> a
+    void setOnSubmitClickListener(com.immomo.momo.android.BasePopupWindow$onSubmitClickListener) -> a
+com.immomo.momo.android.BasePopupWindow$onSubmitClickListener -> com.immomo.momo.android.e:
+    void onClick() -> a
+com.immomo.momo.android.BaseWebActivity -> com.immomo.momo.android.BaseWebActivity:
+    android.view.View mLoadingView -> v
+    android.webkit.WebView mWebView -> u
+    void onCreate(android.os.Bundle) -> onCreate
+    android.view.View access$0(com.immomo.momo.android.BaseWebActivity) -> a
+com.immomo.momo.android.BaseWebActivity$1 -> com.immomo.momo.android.f:
+    com.immomo.momo.android.BaseWebActivity this$0 -> a
+    void onProgressChanged(android.webkit.WebView,int) -> onProgressChanged
+com.immomo.momo.android.BaseWebActivity$2 -> com.immomo.momo.android.g:
+    com.immomo.momo.android.BaseWebActivity this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError) -> onReceivedSslError
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+com.immomo.momo.android.activity.AboutActivity -> com.immomo.momo.android.activity.AboutActivity:
+    com.immomo.momo.android.view.HandyTextView mHtvVersionName -> u
+    android.widget.Button mBtnCheckNewVersion -> v
+    android.widget.Button mBtnIntroduction -> w
+    android.widget.Button mBtnGoOfficialWebsite -> x
+    android.os.Handler mHandler -> y
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onClick(android.view.View) -> onClick
+    void access$0(com.immomo.momo.android.activity.AboutActivity) -> a
+    void access$1(com.immomo.momo.android.activity.AboutActivity,java.lang.String) -> a
+com.immomo.momo.android.activity.AboutActivity$1 -> com.immomo.momo.android.activity.a:
+    com.immomo.momo.android.activity.AboutActivity this$0 -> a
+    void run() -> run
+com.immomo.momo.android.activity.AboutTabsActivity -> com.immomo.momo.android.activity.AboutTabsActivity:
+    com.immomo.momo.android.view.HeaderLayout mHeaderLayout -> a
+    android.widget.TabHost mTabHost -> b
+    void onCreate(android.os.Bundle) -> onCreate
+com.immomo.momo.android.activity.FindPwdEmailActivity -> com.immomo.momo.android.activity.FindPwdEmailActivity:
+    android.widget.EditText mEtEmail -> u
+    android.widget.Button mBtnBack -> v
+    android.widget.Button mBtnSubmit -> w
+    java.lang.String mEmail -> x
+    com.immomo.momo.android.BaseDialog mDialog -> y
+    boolean mIsSuccess -> z
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void onClick(android.content.DialogInterface,int) -> onClick
+    void access$0(com.immomo.momo.android.activity.FindPwdEmailActivity,java.lang.String) -> a
+    java.lang.String access$1(com.immomo.momo.android.activity.FindPwdEmailActivity) -> a
+    void access$2(com.immomo.momo.android.activity.FindPwdEmailActivity) -> b
+    void access$3(com.immomo.momo.android.activity.FindPwdEmailActivity,boolean) -> a
+    void access$4(com.immomo.momo.android.activity.FindPwdEmailActivity,com.immomo.momo.android.BaseDialog) -> a
+    com.immomo.momo.android.BaseDialog access$5(com.immomo.momo.android.activity.FindPwdEmailActivity) -> c
+com.immomo.momo.android.activity.FindPwdEmailActivity$1 -> com.immomo.momo.android.activity.b:
+    com.immomo.momo.android.activity.FindPwdEmailActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.FindPwdPhoneActivity -> com.immomo.momo.android.activity.FindPwdPhoneActivity:
+    com.immomo.momo.android.view.HandyTextView mHtvAreaCode -> u
+    android.widget.EditText mEtPhone -> v
+    android.widget.Button mBtnBack -> w
+    android.widget.Button mBtnNext -> x
+    java.lang.String mAreaCode -> y
+    java.lang.String mPhone -> z
+    com.immomo.momo.android.dialog.SimpleListDialog mSimpleListDialog -> A
+    java.lang.String[] mCountryCodes -> B
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void onItemClick(int) -> a
+    void access$0(com.immomo.momo.android.activity.FindPwdPhoneActivity,java.lang.String) -> a
+    java.lang.String access$1(com.immomo.momo.android.activity.FindPwdPhoneActivity) -> a
+    void access$2(com.immomo.momo.android.activity.FindPwdPhoneActivity) -> b
+    void access$3(com.immomo.momo.android.activity.FindPwdPhoneActivity,java.lang.Class) -> a
+    void access$4(com.immomo.momo.android.activity.FindPwdPhoneActivity,java.lang.String) -> b
+com.immomo.momo.android.activity.FindPwdPhoneActivity$1 -> com.immomo.momo.android.activity.c:
+    com.immomo.momo.android.activity.FindPwdPhoneActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.FindPwdTabsActivity -> com.immomo.momo.android.activity.FindPwdTabsActivity:
+    com.immomo.momo.android.view.HeaderLayout mHeaderLayout -> a
+    android.widget.TabHost mTabHost -> b
+    void onCreate(android.os.Bundle) -> onCreate
+com.immomo.momo.android.activity.HelpActivity -> com.immomo.momo.android.activity.HelpActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+com.immomo.momo.android.activity.ImageBrowserActivity -> com.immomo.momo.android.activity.ImageBrowserActivity:
+    com.immomo.momo.android.view.ScrollViewPager mSvpPager -> u
+    com.immomo.momo.android.view.PhotoTextView mPtvPage -> v
+    com.immomo.momo.android.adapter.ImageBrowserAdapter mAdapter -> w
+    int mPosition -> x
+    int mTotal -> y
+    com.immomo.momo.android.entity.NearByPeopleProfile mProfile -> z
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPageScrollStateChanged(int) -> b
+    void onPageScrolled$486775f1(int,float) -> a
+    void onPageSelected(int) -> a
+com.immomo.momo.android.activity.LoginActivity -> com.immomo.momo.android.activity.LoginActivity:
+    com.immomo.momo.android.view.HeaderLayout mHeaderLayout -> u
+    android.widget.EditText mEtAccount -> v
+    android.widget.EditText mEtPwd -> w
+    com.immomo.momo.android.view.HandyTextView mHtvForgotPassword -> x
+    com.immomo.momo.android.view.HandyTextView mHtvSelectCountryCode -> y
+    android.widget.Button mBtnBack -> z
+    android.widget.Button mBtnLogin -> A
+    java.lang.String[] DEFAULT_ACCOUNTS -> B
+    java.lang.String mAreaCode -> C
+    java.lang.String mAccount -> D
+    java.lang.String mPassword -> E
+    com.immomo.momo.android.dialog.SimpleListDialog mSimpleListDialog -> F
+    java.lang.String[] mCountryCodes -> G
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void onItemClick(int) -> a
+    void access$0(com.immomo.momo.android.activity.LoginActivity,java.lang.String) -> a
+    java.lang.String[] access$1() -> g
+    java.lang.String access$2(com.immomo.momo.android.activity.LoginActivity) -> a
+    java.lang.String access$3(com.immomo.momo.android.activity.LoginActivity) -> b
+    void access$4(com.immomo.momo.android.activity.LoginActivity) -> c
+    void access$5(com.immomo.momo.android.activity.LoginActivity,java.lang.Class) -> a
+    void access$6(com.immomo.momo.android.activity.LoginActivity,java.lang.String) -> b
+com.immomo.momo.android.activity.LoginActivity$1 -> com.immomo.momo.android.activity.d:
+    com.immomo.momo.android.activity.LoginActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.OtherProfileActivity -> com.immomo.momo.android.activity.OtherProfileActivity:
+    com.immomo.momo.android.view.HeaderLayout mHeaderLayout -> u
+    android.widget.LinearLayout mLayoutChat -> v
+    android.widget.LinearLayout mLayoutUnfollow -> w
+    android.widget.LinearLayout mLayoutFollow -> x
+    android.widget.LinearLayout mLayoutReport -> y
+    com.immomo.momo.android.view.UserPhotosView mUpvPhotos -> z
+    java.lang.String mUid -> A
+    java.lang.String mName -> B
+    com.immomo.momo.android.entity.NearByPeopleProfile mProfile -> C
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void onItemClick$5359dc9a(int) -> a
+    void access$0(com.immomo.momo.android.activity.OtherProfileActivity,java.lang.String) -> a
+    void access$1(com.immomo.momo.android.activity.OtherProfileActivity,com.immomo.momo.android.entity.NearByPeopleProfile) -> a
+    com.immomo.momo.android.entity.NearByPeopleProfile access$2(com.immomo.momo.android.activity.OtherProfileActivity) -> a
+    java.lang.String access$3(com.immomo.momo.android.activity.OtherProfileActivity) -> b
+    void access$4(com.immomo.momo.android.activity.OtherProfileActivity) -> c
+    void access$5(com.immomo.momo.android.activity.OtherProfileActivity,java.lang.String) -> b
+    void access$6(com.immomo.momo.android.activity.OtherProfileActivity) -> d
+com.immomo.momo.android.activity.OtherProfileActivity$1 -> com.immomo.momo.android.activity.e:
+    com.immomo.momo.android.activity.OtherProfileActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.ProtocolActivity -> com.immomo.momo.android.activity.ProtocolActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+com.immomo.momo.android.activity.ResetPwdPhoneActivity -> com.immomo.momo.android.activity.ResetPwdPhoneActivity:
+    com.immomo.momo.android.view.HeaderLayout mHeaderLayout -> u
+    com.immomo.momo.android.view.HandyTextView mHtvContent -> v
+    android.widget.EditText mEtValidateCode -> w
+    android.widget.EditText mEtNewPwd -> x
+    android.widget.EditText mEtReNewPwd -> y
+    android.widget.Button mBtnBack -> z
+    android.widget.Button mBtnSubmit -> A
+    java.lang.String mValidateCode -> B
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean isNull(android.widget.EditText) -> a
+    void onClick(android.view.View) -> onClick
+    void access$0(com.immomo.momo.android.activity.ResetPwdPhoneActivity,java.lang.String) -> a
+    java.lang.String access$1(com.immomo.momo.android.activity.ResetPwdPhoneActivity) -> a
+    void access$2(com.immomo.momo.android.activity.ResetPwdPhoneActivity) -> b
+    void access$3(com.immomo.momo.android.activity.ResetPwdPhoneActivity,java.lang.String) -> b
+    void access$4$48e72bed(com.immomo.momo.android.activity.ResetPwdPhoneActivity) -> c
+    android.widget.EditText access$5(com.immomo.momo.android.activity.ResetPwdPhoneActivity) -> d
+com.immomo.momo.android.activity.ResetPwdPhoneActivity$1 -> com.immomo.momo.android.activity.f:
+    com.immomo.momo.android.activity.ResetPwdPhoneActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.UserGuiDeActivity -> com.immomo.momo.android.activity.UserGuiDeActivity:
+    com.immomo.momo.android.view.ScrollViewPager mSvpPager -> u
+    void onCreate(android.os.Bundle) -> onCreate
+com.immomo.momo.android.activity.WelcomeActivity -> com.immomo.momo.android.activity.WelcomeActivity:
+    android.widget.LinearLayout mLinearCtrlbar -> u
+    android.widget.LinearLayout mLinearAvatars -> v
+    android.widget.Button mBtnRegister -> w
+    android.widget.Button mBtnLogin -> x
+    android.widget.ImageButton mIbtnAbout -> y
+    android.view.View[] mMemberBlocks -> z
+    java.lang.String[] mAvatars -> A
+    java.lang.String[] mDistances -> B
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    android.widget.LinearLayout access$0(com.immomo.momo.android.activity.WelcomeActivity) -> a
+com.immomo.momo.android.activity.WelcomeActivity$1 -> com.immomo.momo.android.activity.g:
+    com.immomo.momo.android.activity.WelcomeActivity this$0 -> a
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    com.immomo.momo.android.activity.WelcomeActivity access$0(com.immomo.momo.android.activity.WelcomeActivity$1) -> a
+com.immomo.momo.android.activity.WelcomeActivity$1$1 -> com.immomo.momo.android.activity.h:
+    com.immomo.momo.android.activity.WelcomeActivity$1 this$1 -> a
+    void run() -> run
+com.immomo.momo.android.activity.imagefactory.ImageFactory -> com.immomo.momo.android.activity.imagefactory.a:
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity mActivity -> a
+    android.content.Context mContext -> b
+    android.view.View mContentRootView -> c
+    android.view.View findViewById(int) -> a
+    void initViews() -> a
+com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity -> com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity:
+    com.immomo.momo.android.view.HeaderLayout mHeaderLayout -> u
+    android.widget.ViewFlipper mVfFlipper -> v
+    android.widget.Button mBtnLeft -> w
+    android.widget.Button mBtnRight -> x
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryCrop mImageFactoryCrop -> y
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter mImageFactoryFliter -> z
+    java.lang.String mPath -> A
+    java.lang.String mNewPath -> B
+    int mIndex -> C
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    void initImageFactory() -> g
+    int access$0(com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity) -> a
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryCrop access$1(com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity) -> b
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter access$2(com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity) -> c
+    void access$3(com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity,int) -> a
+    void access$4(com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity) -> d
+    android.widget.ViewFlipper access$5(com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity) -> e
+    void access$6(com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity,java.lang.String) -> a
+    java.lang.String access$7(com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity) -> f
+com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity$1 -> com.immomo.momo.android.activity.imagefactory.b:
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity$2 -> com.immomo.momo.android.activity.imagefactory.c:
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity$OnRightImageButtonClickListener -> com.immomo.momo.android.activity.imagefactory.d:
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryActivity this$0 -> a
+    void onClick() -> a
+com.immomo.momo.android.activity.imagefactory.ImageFactoryCrop -> com.immomo.momo.android.activity.imagefactory.e:
+    com.immomo.momo.android.view.CropImageView mCivDisplay -> d
+    android.widget.ProgressBar mPbBar -> e
+    java.lang.String mPath -> f
+    android.graphics.Bitmap mBitmap -> g
+    com.immomo.momo.android.view.CropImage mCropImage -> h
+    android.os.Handler handler -> c
+    void initViews() -> a
+    void init(java.lang.String,int,int) -> a
+    void Rotate() -> b
+    android.graphics.Bitmap cropAndSave() -> c
+    android.widget.ProgressBar access$0(com.immomo.momo.android.activity.imagefactory.ImageFactoryCrop) -> a
+com.immomo.momo.android.activity.imagefactory.ImageFactoryCrop$1 -> com.immomo.momo.android.activity.imagefactory.f:
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryCrop this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter -> com.immomo.momo.android.activity.imagefactory.g:
+    com.immomo.momo.android.view.RotateImageView mRivImage -> c
+    java.lang.String mPath -> d
+    android.graphics.Bitmap mBitmap -> e
+    java.util.List mFilterItems -> f
+    android.view.View[] mFliterBlocks -> g
+    int mSelectBlock -> h
+    android.graphics.Bitmap mSelectBitmap -> i
+    void initViews() -> a
+    void Rotate() -> b
+    android.graphics.Bitmap getBitmap() -> c
+    void init(java.lang.String) -> a
+    void initFilterBlocks() -> d
+    void refreshBlockBg() -> e
+    void access$0(com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter,int) -> a
+    void access$1(com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter) -> a
+    void access$2(com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter) -> b
+com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$1 -> com.immomo.momo.android.activity.imagefactory.h:
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterItem -> com.immomo.momo.android.activity.imagefactory.i:
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType mFilterType -> a
+    java.lang.String mFilterName -> b
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter this$0 -> c
+com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType -> com.immomo.momo.android.activity.imagefactory.j:
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType Ä¬ÈÏ -> a
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType LOMO -> b
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType ´¿Õæ -> c
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType ÖØ²Ê -> d
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType Î¬Ò²ÄÉ -> e
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType µ­ÑÅ -> f
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType ¿á -> g
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType Å¨ºñ -> h
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType[] ENUM$VALUES -> i
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType[] values() -> values
+    com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType valueOf(java.lang.String) -> valueOf
+com.immomo.momo.android.activity.maintabs.ContactTabsActivity -> com.immomo.momo.android.activity.maintabs.ContactTabsActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.immomo.momo.android.activity.maintabs.MainTabActivity -> com.immomo.momo.android.activity.maintabs.MainTabActivity:
+    android.widget.TabHost mTabHost -> a
+    void onCreate(android.os.Bundle) -> onCreate
+com.immomo.momo.android.activity.maintabs.NearByActivity -> com.immomo.momo.android.activity.maintabs.NearByActivity:
+    com.immomo.momo.android.view.HeaderLayout mHeaderLayout -> u
+    com.immomo.momo.android.view.HeaderSpinner mHeaderSpinner -> v
+    com.immomo.momo.android.activity.maintabs.NearByPeopleFragment mPeopleFragment -> w
+    com.immomo.momo.android.activity.maintabs.NearByGroupFragment mGroupFragment -> x
+    com.immomo.momo.android.popupwindow.NearByPopupWindow mPopupWindow -> y
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    com.immomo.momo.android.popupwindow.NearByPopupWindow access$0(com.immomo.momo.android.activity.maintabs.NearByActivity) -> a
+    void access$1(com.immomo.momo.android.activity.maintabs.NearByActivity,java.lang.String) -> a
+    com.immomo.momo.android.view.HeaderLayout access$2(com.immomo.momo.android.activity.maintabs.NearByActivity) -> b
+    void access$3(com.immomo.momo.android.activity.maintabs.NearByActivity,android.os.AsyncTask) -> a
+    com.immomo.momo.android.activity.maintabs.NearByPeopleFragment access$4(com.immomo.momo.android.activity.maintabs.NearByActivity) -> c
+    com.immomo.momo.android.activity.maintabs.NearByGroupFragment access$5(com.immomo.momo.android.activity.maintabs.NearByActivity) -> d
+    com.immomo.momo.android.view.HeaderSpinner access$6(com.immomo.momo.android.activity.maintabs.NearByActivity) -> e
+com.immomo.momo.android.activity.maintabs.NearByActivity$1 -> com.immomo.momo.android.activity.maintabs.a:
+    com.immomo.momo.android.activity.maintabs.NearByActivity this$0 -> a
+    void onClick() -> a
+com.immomo.momo.android.activity.maintabs.NearByActivity$2 -> com.immomo.momo.android.activity.maintabs.b:
+    com.immomo.momo.android.activity.maintabs.NearByActivity this$0 -> a
+    void onDismiss() -> onDismiss
+com.immomo.momo.android.activity.maintabs.NearByActivity$OnMiddleImageButtonClickListener -> com.immomo.momo.android.activity.maintabs.c:
+    com.immomo.momo.android.activity.maintabs.NearByActivity this$0 -> a
+    void onClick() -> a
+com.immomo.momo.android.activity.maintabs.NearByActivity$OnSearchClickListener -> com.immomo.momo.android.activity.maintabs.d:
+    com.immomo.momo.android.activity.maintabs.NearByActivity this$0 -> a
+    void onSearch(android.widget.EditText) -> a
+com.immomo.momo.android.activity.maintabs.NearByActivity$OnSearchClickListener$1 -> com.immomo.momo.android.activity.maintabs.e:
+    com.immomo.momo.android.activity.maintabs.NearByActivity$OnSearchClickListener this$1 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.maintabs.NearByActivity$OnSpinnerClickListener -> com.immomo.momo.android.activity.maintabs.f:
+    com.immomo.momo.android.activity.maintabs.NearByActivity this$0 -> a
+    void onClick(boolean) -> a
+com.immomo.momo.android.activity.maintabs.NearByActivity$OnSwitcherButtonClickListener -> com.immomo.momo.android.activity.maintabs.g:
+    com.immomo.momo.android.activity.maintabs.NearByActivity this$0 -> a
+    int[] $SWITCH_TABLE$com$immomo$momo$android$view$SwitcherButton$SwitcherButtonState -> b
+    void onClick(com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState) -> a
+    int[] $SWITCH_TABLE$com$immomo$momo$android$view$SwitcherButton$SwitcherButtonState() -> a
+com.immomo.momo.android.activity.maintabs.NearByFeedsActivity -> com.immomo.momo.android.activity.maintabs.NearByFeedsActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.immomo.momo.android.activity.maintabs.NearByGroupFragment -> com.immomo.momo.android.activity.maintabs.h:
+    android.widget.LinearLayout mLayoutCover -> Z
+    com.immomo.momo.android.view.MoMoRefreshExpandableList mMmrelvList -> aa
+    com.immomo.momo.android.adapter.NearByGroupAdapter mAdapter -> ab
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void initViews() -> y
+    void initEvents() -> z
+    void init() -> A
+    void onRefresh() -> D
+    void onCancel() -> E
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onClick(android.view.View) -> onClick
+    void access$0(com.immomo.momo.android.activity.maintabs.NearByGroupFragment,java.lang.String) -> a
+    com.immomo.momo.android.BaseApplication access$1(com.immomo.momo.android.activity.maintabs.NearByGroupFragment) -> a
+    void access$2(com.immomo.momo.android.activity.maintabs.NearByGroupFragment) -> b
+    void access$3(com.immomo.momo.android.activity.maintabs.NearByGroupFragment,java.lang.String) -> b
+    android.content.Context access$4(com.immomo.momo.android.activity.maintabs.NearByGroupFragment) -> c
+    void access$5(com.immomo.momo.android.activity.maintabs.NearByGroupFragment,com.immomo.momo.android.adapter.NearByGroupAdapter) -> a
+    com.immomo.momo.android.view.MoMoRefreshExpandableList access$6(com.immomo.momo.android.activity.maintabs.NearByGroupFragment) -> d
+    com.immomo.momo.android.adapter.NearByGroupAdapter access$7(com.immomo.momo.android.activity.maintabs.NearByGroupFragment) -> e
+    android.app.Activity access$8(com.immomo.momo.android.activity.maintabs.NearByGroupFragment) -> f
+com.immomo.momo.android.activity.maintabs.NearByGroupFragment$1 -> com.immomo.momo.android.activity.maintabs.i:
+    com.immomo.momo.android.activity.maintabs.NearByGroupFragment this$0 -> a
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.maintabs.NearByGroupFragment$2 -> com.immomo.momo.android.activity.maintabs.j:
+    com.immomo.momo.android.activity.maintabs.NearByGroupFragment this$0 -> a
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.maintabs.NearByPeopleFragment -> com.immomo.momo.android.activity.maintabs.k:
+    com.immomo.momo.android.view.MoMoRefreshListView mMmrlvList -> Z
+    com.immomo.momo.android.adapter.NearByPeopleAdapter mAdapter -> aa
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void initViews() -> y
+    void initEvents() -> z
+    void init() -> A
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onCancel() -> E
+    void onRefresh() -> D
+    void onManualRefresh() -> F
+    void access$0(com.immomo.momo.android.activity.maintabs.NearByPeopleFragment,java.lang.String) -> a
+    com.immomo.momo.android.BaseApplication access$1(com.immomo.momo.android.activity.maintabs.NearByPeopleFragment) -> a
+    void access$2(com.immomo.momo.android.activity.maintabs.NearByPeopleFragment) -> b
+    void access$3(com.immomo.momo.android.activity.maintabs.NearByPeopleFragment,java.lang.String) -> b
+    android.content.Context access$4(com.immomo.momo.android.activity.maintabs.NearByPeopleFragment) -> c
+    void access$5(com.immomo.momo.android.activity.maintabs.NearByPeopleFragment,com.immomo.momo.android.adapter.NearByPeopleAdapter) -> a
+    com.immomo.momo.android.view.MoMoRefreshListView access$6(com.immomo.momo.android.activity.maintabs.NearByPeopleFragment) -> d
+    com.immomo.momo.android.adapter.NearByPeopleAdapter access$7(com.immomo.momo.android.activity.maintabs.NearByPeopleFragment) -> e
+com.immomo.momo.android.activity.maintabs.NearByPeopleFragment$1 -> com.immomo.momo.android.activity.maintabs.l:
+    com.immomo.momo.android.activity.maintabs.NearByPeopleFragment this$0 -> a
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.maintabs.NearByPeopleFragment$2 -> com.immomo.momo.android.activity.maintabs.m:
+    com.immomo.momo.android.activity.maintabs.NearByPeopleFragment this$0 -> a
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.maintabs.SessionListActivity -> com.immomo.momo.android.activity.maintabs.SessionListActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.immomo.momo.android.activity.maintabs.TabItemActivity -> com.immomo.momo.android.activity.maintabs.TabItemActivity:
+com.immomo.momo.android.activity.maintabs.UserSettingActivity -> com.immomo.momo.android.activity.maintabs.UserSettingActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.immomo.momo.android.activity.register.RegisterActivity -> com.immomo.momo.android.activity.register.RegisterActivity:
+    com.immomo.momo.android.view.HeaderLayout mHeaderLayout -> u
+    android.widget.ViewFlipper mVfFlipper -> v
+    android.widget.Button mBtnPrevious -> w
+    android.widget.Button mBtnNext -> x
+    com.immomo.momo.android.BaseDialog mBackDialog -> y
+    com.immomo.momo.android.activity.register.RegisterStep mCurrentStep -> z
+    com.immomo.momo.android.activity.register.StepPhone mStepPhone -> A
+    com.immomo.momo.android.activity.register.StepVerify mStepVerify -> B
+    com.immomo.momo.android.activity.register.StepSetPassword mStepSetPassword -> C
+    com.immomo.momo.android.activity.register.StepBaseInfo mStepBaseInfo -> D
+    com.immomo.momo.android.activity.register.StepBirthday mStepBirthday -> E
+    com.immomo.momo.android.activity.register.StepPhoto mStepPhoto -> F
+    int mCurrentStepIndex -> G
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onBackPressed() -> onBackPressed
+    void onClick(android.view.View) -> onClick
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void next() -> g
+    com.immomo.momo.android.activity.register.RegisterStep initStep() -> k
+    void doPrevious() -> l
+    void putAsyncTask(android.os.AsyncTask) -> a
+    void showCustomToast(java.lang.String) -> d
+    void showLoadingDialog(java.lang.String) -> c
+    void dismissLoadingDialog() -> f
+    int getScreenWidth() -> h
+    com.immomo.momo.android.BaseApplication getBaseApplication() -> i
+    java.lang.String getPhoneNumber() -> j
+com.immomo.momo.android.activity.register.RegisterActivity$1 -> com.immomo.momo.android.activity.register.a:
+    com.immomo.momo.android.activity.register.RegisterActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.immomo.momo.android.activity.register.RegisterActivity$2 -> com.immomo.momo.android.activity.register.b:
+    com.immomo.momo.android.activity.register.RegisterActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.immomo.momo.android.activity.register.RegisterStep -> com.immomo.momo.android.activity.register.c:
+    com.immomo.momo.android.activity.register.RegisterActivity mActivity -> a
+    android.content.Context mContext -> b
+    android.view.View mContentRootView -> d
+    com.immomo.momo.android.activity.register.RegisterStep$onNextActionListener mOnNextActionListener -> c
+    void initViews() -> a
+    void initEvents() -> b
+    boolean validate() -> c
+    boolean isChange() -> d
+    android.view.View findViewById(int) -> b
+    void doNext() -> e
+    boolean isNull(android.widget.EditText) -> a
+    java.lang.String getPhoneNumber() -> f
+    void showCustomToast(java.lang.String) -> a
+    void putAsyncTask(android.os.AsyncTask) -> a
+    void showLoadingDialog(java.lang.String) -> b
+    void dismissLoadingDialog() -> g
+    int getScreenWidth() -> h
+    com.immomo.momo.android.BaseApplication getBaseApplication() -> i
+    void setOnNextActionListener(com.immomo.momo.android.activity.register.RegisterStep$onNextActionListener) -> a
+com.immomo.momo.android.activity.register.RegisterStep$onNextActionListener -> com.immomo.momo.android.activity.register.d:
+    void next() -> g
+com.immomo.momo.android.activity.register.StepBaseInfo -> com.immomo.momo.android.activity.register.e:
+    android.widget.EditText mEtName -> d
+    android.widget.RadioGroup mRgGender -> e
+    android.widget.RadioButton mRbMale -> f
+    android.widget.RadioButton mRbFemale -> g
+    boolean mIsChange -> h
+    boolean mIsGenderAlert -> i
+    com.immomo.momo.android.BaseDialog mBaseDialog -> j
+    void initViews() -> a
+    void initEvents() -> b
+    void doNext() -> e
+    boolean validate() -> c
+    boolean isChange() -> d
+    void onCheckedChanged(android.widget.RadioGroup,int) -> onCheckedChanged
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.immomo.momo.android.activity.register.StepBaseInfo$1 -> com.immomo.momo.android.activity.register.f:
+    com.immomo.momo.android.activity.register.StepBaseInfo this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.immomo.momo.android.activity.register.StepBirthday -> com.immomo.momo.android.activity.register.g:
+    com.immomo.momo.android.view.HandyTextView mHtvConstellation -> d
+    com.immomo.momo.android.view.HandyTextView mHtvAge -> e
+    android.widget.DatePicker mDpBirthday -> f
+    java.util.Calendar mCalendar -> g
+    java.util.Date mMinDate -> h
+    java.util.Date mMaxDate -> i
+    java.util.Date mSelectDate -> j
+    void flushBirthday(java.util.Calendar) -> a
+    void initViews() -> a
+    void initEvents() -> b
+    void doNext() -> e
+    boolean validate() -> c
+    boolean isChange() -> d
+    void onDateChanged(android.widget.DatePicker,int,int,int) -> onDateChanged
+com.immomo.momo.android.activity.register.StepPhone -> com.immomo.momo.android.activity.register.h:
+    com.immomo.momo.android.view.HandyTextView mHtvAreaCode -> d
+    android.widget.EditText mEtPhone -> e
+    com.immomo.momo.android.view.HandyTextView mHtvNotice -> f
+    com.immomo.momo.android.view.HandyTextView mHtvNote -> g
+    java.lang.String mAreaCode -> h
+    com.immomo.momo.android.dialog.SimpleListDialog mSimpleListDialog -> i
+    java.lang.String[] mCountryCodes -> j
+    java.lang.String mPhone -> k
+    boolean mIsChange -> l
+    com.immomo.momo.android.dialog.WebDialog mWebDialog -> m
+    java.lang.String getPhoneNumber() -> f
+    void initViews() -> a
+    void initEvents() -> b
+    void doNext() -> e
+    boolean validate() -> c
+    boolean isChange() -> d
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void onClick(android.view.View) -> onClick
+    void onItemClick(int) -> a
+    void urlError() -> j
+    void networkError() -> k
+    java.lang.String access$0(com.immomo.momo.android.activity.register.StepPhone) -> a
+    java.lang.String access$1(com.immomo.momo.android.activity.register.StepPhone) -> b
+    void access$2$95b702c(com.immomo.momo.android.activity.register.StepPhone) -> c
+    com.immomo.momo.android.dialog.WebDialog access$3(com.immomo.momo.android.activity.register.StepPhone) -> d
+com.immomo.momo.android.activity.register.StepPhone$1 -> com.immomo.momo.android.activity.register.i:
+    com.immomo.momo.android.activity.register.StepPhone this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.register.StepPhone$2 -> com.immomo.momo.android.activity.register.j:
+    com.immomo.momo.android.activity.register.StepPhone this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.immomo.momo.android.activity.register.StepPhoto -> com.immomo.momo.android.activity.register.k:
+    com.immomo.momo.android.view.HandyTextView mHtvRecommendation -> d
+    android.widget.ImageView mIvUserPhoto -> e
+    android.widget.LinearLayout mLayoutSelectPhoto -> f
+    android.widget.LinearLayout mLayoutTakePicture -> g
+    android.widget.LinearLayout mLayoutAvatars -> h
+    android.view.View[] mMemberBlocks -> i
+    java.lang.String[] mAvatars -> j
+    java.lang.String[] mDistances -> k
+    java.lang.String mTakePicturePath -> l
+    android.graphics.Bitmap mUserPhoto -> m
+    com.immomo.momo.android.dialog.EditTextDialog mEditTextDialog -> n
+    void setUserPhoto(android.graphics.Bitmap) -> a
+    java.lang.String getTakePicturePath() -> j
+    void initViews() -> a
+    void initEvents() -> b
+    boolean validate() -> c
+    void doNext() -> e
+    boolean isChange() -> d
+    void onClick(android.view.View) -> onClick
+    com.immomo.momo.android.dialog.EditTextDialog access$0(com.immomo.momo.android.activity.register.StepPhoto) -> a
+com.immomo.momo.android.activity.register.StepPhoto$1 -> com.immomo.momo.android.activity.register.l:
+    com.immomo.momo.android.activity.register.StepPhoto this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.immomo.momo.android.activity.register.StepPhoto$2 -> com.immomo.momo.android.activity.register.m:
+    com.immomo.momo.android.activity.register.StepPhoto this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.immomo.momo.android.activity.register.StepPhoto$3 -> com.immomo.momo.android.activity.register.n:
+    com.immomo.momo.android.activity.register.StepPhoto this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.immomo.momo.android.activity.register.StepSetPassword -> com.immomo.momo.android.activity.register.o:
+    android.widget.EditText mEtPwd -> d
+    android.widget.EditText mEtRePwd -> e
+    boolean mIsChange -> f
+    void initViews() -> a
+    void initEvents() -> b
+    void doNext() -> e
+    boolean validate() -> c
+    boolean isChange() -> d
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.immomo.momo.android.activity.register.StepVerify -> com.immomo.momo.android.activity.register.p:
+    com.immomo.momo.android.view.HandyTextView mHtvPhoneNumber -> e
+    android.widget.EditText mEtVerifyCode -> f
+    android.widget.Button mBtnResend -> g
+    com.immomo.momo.android.view.HandyTextView mHtvNoCode -> h
+    boolean mIsChange -> i
+    java.lang.String mVerifyCode -> j
+    int mReSendTime -> k
+    com.immomo.momo.android.BaseDialog mBaseDialog -> l
+    android.os.Handler handler -> d
+    void initViews() -> a
+    void initEvents() -> b
+    void doNext() -> e
+    boolean validate() -> c
+    boolean isChange() -> d
+    void onClick(android.view.View) -> onClick
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    int access$0(com.immomo.momo.android.activity.register.StepVerify) -> a
+    void access$1(com.immomo.momo.android.activity.register.StepVerify,int) -> a
+    android.widget.Button access$2(com.immomo.momo.android.activity.register.StepVerify) -> b
+    java.lang.String access$3(com.immomo.momo.android.activity.register.StepVerify) -> c
+    void access$4$53337293(com.immomo.momo.android.activity.register.StepVerify) -> d
+    android.widget.EditText access$5(com.immomo.momo.android.activity.register.StepVerify) -> e
+    void access$6(com.immomo.momo.android.activity.register.StepVerify,com.immomo.momo.android.BaseDialog) -> a
+    com.immomo.momo.android.BaseDialog access$7(com.immomo.momo.android.activity.register.StepVerify) -> f
+com.immomo.momo.android.activity.register.StepVerify$1 -> com.immomo.momo.android.activity.register.q:
+    com.immomo.momo.android.activity.register.StepVerify this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.immomo.momo.android.activity.register.StepVerify$2 -> com.immomo.momo.android.activity.register.r:
+    com.immomo.momo.android.activity.register.StepVerify this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Boolean doInBackground$5f8445a4() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    com.immomo.momo.android.activity.register.StepVerify access$2(com.immomo.momo.android.activity.register.StepVerify$2) -> a
+com.immomo.momo.android.activity.register.StepVerify$2$1 -> com.immomo.momo.android.activity.register.s:
+    com.immomo.momo.android.activity.register.StepVerify$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.immomo.momo.android.adapter.ImageBrowserAdapter -> com.immomo.momo.android.a.a:
+    com.immomo.momo.android.BaseApplication mApplication -> a
+    java.util.List mPhotos -> b
+    int getCount() -> a
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> a
+    java.lang.Object instantiateItem(android.view.ViewGroup,int) -> a
+com.immomo.momo.android.adapter.NearByGroupAdapter -> com.immomo.momo.android.a.b:
+    java.util.List mNearByGroups -> e
+    int[] mPositions -> f
+    int mCount -> g
+    int getCount() -> getCount
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    int getPinnedHeaderState(int) -> a
+    void configurePinnedHeader$17e143a3(android.view.View,int) -> a
+    int getPositionForSection(int) -> getPositionForSection
+    int getSectionForPosition(int) -> getSectionForPosition
+    java.lang.Object[] getSections() -> getSections
+    void onPinnedHeaderClick(int) -> b
+com.immomo.momo.android.adapter.NearByGroupAdapter$1 -> com.immomo.momo.android.a.c:
+    com.immomo.momo.android.adapter.NearByGroupAdapter this$0 -> a
+    com.immomo.momo.android.entity.NearByGroup val$group -> b
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.adapter.NearByGroupAdapter$ViewHolder -> com.immomo.momo.android.a.d:
+    android.widget.LinearLayout mLayoutHeader -> a
+    com.immomo.momo.android.view.HandyTextView mHtvHeaderAddress -> b
+    com.immomo.momo.android.view.HandyTextView mHtvHeaderCount -> c
+    android.widget.ImageView mIvAvatar -> d
+    android.widget.ImageView mIvParty -> e
+    android.widget.ImageView mIvNew -> f
+    com.immomo.momo.android.view.HandyTextView mHtvName -> g
+    com.immomo.momo.android.view.HandyTextView mHtvMember -> h
+    android.widget.ImageView mIvLevel -> i
+    com.immomo.momo.android.view.HandyTextView mHtvSign -> j
+    com.immomo.momo.android.adapter.NearByGroupAdapter this$0 -> k
+com.immomo.momo.android.adapter.NearByPeopleAdapter -> com.immomo.momo.android.a.e:
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.immomo.momo.android.adapter.NearByPeopleAdapter$ViewHolder -> com.immomo.momo.android.a.f:
+    android.widget.ImageView mIvAvatar -> a
+    android.widget.ImageView mIvVip -> b
+    android.widget.ImageView mIvGroupRole -> c
+    android.widget.ImageView mIvIndustry -> d
+    android.widget.ImageView mIvWeibo -> e
+    android.widget.ImageView mIvTxWeibo -> f
+    android.widget.ImageView mIvRenRen -> g
+    android.widget.ImageView mIvDevice -> h
+    android.widget.ImageView mIvRelation -> i
+    android.widget.ImageView mIvMultipic -> j
+    com.immomo.momo.android.view.HandyTextView mHtvName -> k
+    android.widget.LinearLayout mLayoutGender -> l
+    android.widget.ImageView mIvGender -> m
+    com.immomo.momo.android.view.HandyTextView mHtvAge -> n
+    com.immomo.momo.android.view.HandyTextView mHtvDistance -> o
+    com.immomo.momo.android.view.HandyTextView mHtvTime -> p
+    com.immomo.momo.android.view.HandyTextView mHtvSign -> q
+    com.immomo.momo.android.adapter.NearByPeopleAdapter this$0 -> r
+com.immomo.momo.android.adapter.SimpleListDialogAdapter -> com.immomo.momo.android.a.g:
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.immomo.momo.android.adapter.UserGuiDeAdapter -> com.immomo.momo.android.a.h:
+    android.content.Context mContext -> a
+    android.content.res.TypedArray mContents -> b
+    android.content.res.TypedArray mBottoms -> c
+    android.content.res.TypedArray mBackgrounds -> d
+    android.util.TypedValue mTypedValue -> e
+    int getCount() -> a
+    void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> a
+    java.lang.Object instantiateItem(android.view.ViewGroup,int) -> a
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    android.content.Context access$0(com.immomo.momo.android.adapter.UserGuiDeAdapter) -> a
+com.immomo.momo.android.adapter.UserGuiDeAdapter$1 -> com.immomo.momo.android.a.i:
+    com.immomo.momo.android.adapter.UserGuiDeAdapter this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.dialog.EditTextDialog -> com.immomo.momo.android.b.a:
+    android.widget.EditText mEtEnter -> a
+    void setTitle(java.lang.CharSequence) -> setTitle
+    void setButton(java.lang.CharSequence,android.content.DialogInterface$OnClickListener,java.lang.CharSequence,android.content.DialogInterface$OnClickListener) -> a
+    java.lang.String getText() -> b
+    void requestFocus() -> c
+com.immomo.momo.android.dialog.FlippingLoadingDialog -> com.immomo.momo.android.b.b:
+    com.immomo.momo.android.view.FlippingImageView mFivIcon -> a
+    com.immomo.momo.android.view.HandyTextView mHtvText -> b
+    java.lang.String mText -> c
+    void setText(java.lang.String) -> a
+    void dismiss() -> dismiss
+com.immomo.momo.android.dialog.SimpleListDialog -> com.immomo.momo.android.b.c:
+    android.widget.ListView mLvDisplay -> a
+    android.widget.BaseAdapter mAdapter -> b
+    com.immomo.momo.android.dialog.SimpleListDialog$onSimpleListItemClickListener mOnSimpleListItemClickListener -> c
+    void setAdapter(android.widget.BaseAdapter) -> a
+    void setOnSimpleListItemClickListener(com.immomo.momo.android.dialog.SimpleListDialog$onSimpleListItemClickListener) -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.immomo.momo.android.dialog.SimpleListDialog$onSimpleListItemClickListener -> com.immomo.momo.android.b.d:
+    void onItemClick(int) -> a
+com.immomo.momo.android.dialog.WebDialog -> com.immomo.momo.android.b.e:
+    android.webkit.WebView mWebView -> a
+    android.view.View mLoadingView -> b
+    com.immomo.momo.android.util.NetWorkUtils mNetWorkUtils -> c
+    com.immomo.momo.android.dialog.WebDialog$OnWebDialogErrorListener mOnWebDialogErrorListener -> d
+    void init(java.lang.CharSequence,java.lang.CharSequence,android.content.DialogInterface$OnClickListener) -> a
+    void loadUrl(java.lang.String) -> a
+    void setOnWebDialogErrorListener(com.immomo.momo.android.dialog.WebDialog$OnWebDialogErrorListener) -> a
+    android.webkit.WebView access$0(com.immomo.momo.android.dialog.WebDialog) -> a
+    android.view.View access$1(com.immomo.momo.android.dialog.WebDialog) -> b
+com.immomo.momo.android.dialog.WebDialog$1 -> com.immomo.momo.android.b.f:
+    com.immomo.momo.android.dialog.WebDialog this$0 -> a
+    void onProgressChanged(android.webkit.WebView,int) -> onProgressChanged
+com.immomo.momo.android.dialog.WebDialog$2 -> com.immomo.momo.android.b.g:
+    com.immomo.momo.android.dialog.WebDialog this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError) -> onReceivedSslError
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+com.immomo.momo.android.dialog.WebDialog$OnWebDialogErrorListener -> com.immomo.momo.android.b.h:
+    void urlError() -> j
+    void networkError() -> k
+com.immomo.momo.android.entity.Entity -> com.immomo.momo.android.entity.a:
+com.immomo.momo.android.entity.NearByGroup -> com.immomo.momo.android.entity.b:
+    java.lang.String address -> a
+    java.lang.String distance -> b
+    int groupCount -> c
+    java.util.List mGroups -> d
+    java.lang.String getAddress() -> a
+    java.lang.String getDistance() -> b
+    int getGroupCount() -> c
+    java.util.List getmGroups() -> d
+com.immomo.momo.android.entity.NearByGroups -> com.immomo.momo.android.entity.c:
+    java.lang.String avatar -> a
+    java.lang.String name -> b
+    int isNew -> c
+    int isParty -> d
+    int memberCount -> e
+    int memberTotal -> f
+    int isVip -> g
+    int level -> h
+    java.lang.String sign -> i
+    java.lang.String getAvatar() -> a
+    java.lang.String getName() -> b
+    int getIsNew() -> c
+    int getIsParty() -> d
+    int getMemberCount() -> e
+    int getMemberTotal() -> f
+    int getIsVip() -> g
+    int getLevel() -> h
+    java.lang.String getSign() -> i
+com.immomo.momo.android.entity.NearByPeople -> com.immomo.momo.android.entity.d:
+    java.lang.String uid -> a
+    java.lang.String avatar -> b
+    int isVip -> c
+    int isGroupRole -> d
+    java.lang.String industry -> e
+    int isbindWeibo -> f
+    int isbindTxWeibo -> g
+    int isbindRenRen -> h
+    int device -> i
+    int isRelation -> j
+    int isMultipic -> k
+    java.lang.String name -> l
+    int gender -> m
+    int genderId -> n
+    int genderBgId -> o
+    int age -> p
+    java.lang.String distance -> q
+    java.lang.String time -> r
+    java.lang.String sign -> s
+    java.lang.String getUid() -> a
+    java.lang.String getAvatar() -> b
+    int getIsVip() -> c
+    int getIsGroupRole() -> d
+    java.lang.String getIndustry() -> e
+    int getIsbindWeibo() -> f
+    int getIsbindTxWeibo() -> g
+    int getIsbindRenRen() -> h
+    int getDevice() -> i
+    int getIsRelation() -> j
+    int getIsMultipic() -> k
+    java.lang.String getName() -> l
+    int getGenderId() -> m
+    int getGenderBgId() -> n
+    int getAge() -> o
+    java.lang.String getDistance() -> p
+    java.lang.String getTime() -> q
+    java.lang.String getSign() -> r
+com.immomo.momo.android.entity.NearByPeopleProfile -> com.immomo.momo.android.entity.NearByPeopleProfile:
+    java.util.List photos -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    java.util.List getPhotos() -> a
+    void setPhotos(java.util.List) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.immomo.momo.android.entity.NearByPeopleProfile$1 -> com.immomo.momo.android.entity.e:
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+com.immomo.momo.android.jni.JniManager -> com.immomo.momo.android.jni.JniManager:
+    com.immomo.momo.android.jni.JniManager mJniManager -> a
+    com.immomo.momo.android.jni.JniManager getInstance() -> a
+    java.lang.String getHelpUrl() -> getHelpUrl
+    java.lang.String getProtocolUrl() -> getProtocolUrl
+    java.lang.String getAgreementDialogUrl() -> getAgreementDialogUrl
+com.immomo.momo.android.popupwindow.NearByPopupWindow -> com.immomo.momo.android.c.a:
+    android.widget.LinearLayout mLayoutRoot -> c
+    android.widget.RadioGroup mRgGender -> d
+    android.widget.RadioGroup mRgTime -> e
+    android.widget.Button mBtnSubmit -> f
+    android.widget.Button mBtnCancel -> g
+    void initViews() -> a
+    void initEvents() -> b
+    void init() -> c
+    com.immomo.momo.android.BasePopupWindow$onSubmitClickListener access$0(com.immomo.momo.android.popupwindow.NearByPopupWindow) -> a
+com.immomo.momo.android.popupwindow.NearByPopupWindow$1 -> com.immomo.momo.android.c.b:
+    com.immomo.momo.android.popupwindow.NearByPopupWindow this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.popupwindow.NearByPopupWindow$2 -> com.immomo.momo.android.c.c:
+    com.immomo.momo.android.popupwindow.NearByPopupWindow this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.popupwindow.NearByPopupWindow$3 -> com.immomo.momo.android.c.d:
+    com.immomo.momo.android.popupwindow.NearByPopupWindow this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.popupwindow.NearByPopupWindow$4 -> com.immomo.momo.android.c.e:
+    com.immomo.momo.android.popupwindow.NearByPopupWindow this$0 -> a
+    void onCheckedChanged(android.widget.RadioGroup,int) -> onCheckedChanged
+com.immomo.momo.android.popupwindow.NearByPopupWindow$5 -> com.immomo.momo.android.c.f:
+    com.immomo.momo.android.popupwindow.NearByPopupWindow this$0 -> a
+    void onCheckedChanged(android.widget.RadioGroup,int) -> onCheckedChanged
+com.immomo.momo.android.util.DateUtils -> com.immomo.momo.android.d.a:
+    java.util.Date getDate(java.lang.String) -> a
+com.immomo.momo.android.util.FileUtils -> com.immomo.momo.android.d.b:
+    boolean isSdcardExist() -> a
+    void createDirFile(java.lang.String) -> a
+    java.io.File createNewFile(java.lang.String) -> b
+    void delFolder(java.lang.String) -> c
+    void delAllFile(java.lang.String) -> d
+com.immomo.momo.android.util.IntentSpan -> com.immomo.momo.android.d.c:
+    android.view.View$OnClickListener mOnClickListener -> a
+    void onClick(android.view.View) -> onClick
+    void updateDrawState(android.text.TextPaint) -> updateDrawState
+com.immomo.momo.android.util.JsonResolveUtils -> com.immomo.momo.android.d.d:
+    boolean resolveNearbyPeople(com.immomo.momo.android.BaseApplication) -> a
+    boolean resolveNearbyGroup(com.immomo.momo.android.BaseApplication) -> b
+    boolean resolveNearbyProfile(android.content.Context,com.immomo.momo.android.entity.NearByPeopleProfile,java.lang.String) -> a
+com.immomo.momo.android.util.NetWorkUtils -> com.immomo.momo.android.d.e:
+    android.content.Context mContext -> c
+    android.net.NetworkInfo$State wifiState -> a
+    android.net.NetworkInfo$State mobileState -> b
+    com.immomo.momo.android.util.NetWorkUtils$NetWorkState getConnectState() -> a
+com.immomo.momo.android.util.NetWorkUtils$NetWorkState -> com.immomo.momo.android.d.f:
+    com.immomo.momo.android.util.NetWorkUtils$NetWorkState WIFI -> a
+    com.immomo.momo.android.util.NetWorkUtils$NetWorkState MOBILE -> b
+    com.immomo.momo.android.util.NetWorkUtils$NetWorkState NONE -> c
+    com.immomo.momo.android.util.NetWorkUtils$NetWorkState[] ENUM$VALUES -> d
+    com.immomo.momo.android.util.NetWorkUtils$NetWorkState[] values() -> values
+    com.immomo.momo.android.util.NetWorkUtils$NetWorkState valueOf(java.lang.String) -> valueOf
+com.immomo.momo.android.util.PhotoUtils -> com.immomo.momo.android.d.g:
+    java.lang.String IMAGE_PATH -> a
+    void selectPhoto(android.app.Activity) -> a
+    java.lang.String takePicture(android.app.Activity) -> b
+    void cropPhoto(android.content.Context,android.app.Activity,java.lang.String) -> a
+    void deleteImageFile() -> a
+    android.graphics.Bitmap createBitmap(java.lang.String,int,int) -> a
+    boolean bitmapIsLarge(android.graphics.Bitmap) -> a
+    java.lang.String savePhotoToSDCard(android.graphics.Bitmap) -> b
+    android.graphics.Bitmap getFilter(com.immomo.momo.android.activity.imagefactory.ImageFactoryFliter$FilterType,android.graphics.Bitmap) -> a
+    android.graphics.Bitmap getIndustry(android.content.Context,java.lang.String) -> a
+    android.graphics.Bitmap toRoundCorner(android.graphics.Bitmap,int) -> a
+com.immomo.momo.android.util.TextUtils -> com.immomo.momo.android.d.h:
+    void addUnderlineText$16196a9e$27f29b60(com.immomo.momo.android.view.HandyTextView,int) -> a
+    java.lang.String getCountryCodeBracketsInfo(java.lang.String,java.lang.String) -> a
+    void addHyperlinks(com.immomo.momo.android.view.HandyTextView,int,int,android.view.View$OnClickListener) -> a
+    java.lang.String getJosn(android.content.Context,java.lang.String) -> a
+    java.lang.String readTextFile(java.io.InputStream) -> a
+com.immomo.momo.android.view.CropImage -> com.immomo.momo.android.view.a:
+    boolean mWaitingToPick -> a
+    boolean mSaving -> b
+    com.immomo.momo.android.view.HighlightView mCrop -> c
+    android.content.Context mContext -> e
+    android.os.Handler mHandler -> f
+    com.immomo.momo.android.view.CropImageView mImageView -> g
+    android.graphics.Bitmap mBitmap -> h
+    java.lang.Runnable mRunFaceDetection -> d
+    void crop(android.graphics.Bitmap) -> a
+    void startRotate$133aeb() -> a
+    android.graphics.Bitmap cropAndSave() -> b
+    void showProgressDialog(java.lang.String,java.lang.Runnable,android.os.Handler) -> a
+    com.immomo.momo.android.view.CropImageView access$0(com.immomo.momo.android.view.CropImage) -> a
+    android.graphics.Bitmap access$1(com.immomo.momo.android.view.CropImage) -> b
+    android.os.Handler access$2(com.immomo.momo.android.view.CropImage) -> c
+    void access$3(com.immomo.momo.android.view.CropImage,android.graphics.Bitmap) -> a
+com.immomo.momo.android.view.CropImage$1 -> com.immomo.momo.android.view.b:
+    float mScale -> a
+    android.graphics.Matrix mImageMatrix -> b
+    android.media.FaceDetector$Face[] mFaces -> c
+    int mNumFaces -> d
+    com.immomo.momo.android.view.CropImage this$0 -> e
+    void run() -> run
+com.immomo.momo.android.view.CropImage$1$1 -> com.immomo.momo.android.view.c:
+    com.immomo.momo.android.view.CropImage$1 this$1 -> a
+    void run() -> run
+com.immomo.momo.android.view.CropImage$2 -> com.immomo.momo.android.view.d:
+    com.immomo.momo.android.view.CropImage this$0 -> a
+    float val$degrees -> b
+    void run() -> run
+com.immomo.momo.android.view.CropImage$2$1 -> com.immomo.momo.android.view.e:
+    com.immomo.momo.android.view.CropImage$2 this$1 -> a
+    float val$degrees -> b
+    java.util.concurrent.CountDownLatch val$latch -> c
+    void run() -> run
+com.immomo.momo.android.view.CropImage$3 -> com.immomo.momo.android.view.f:
+    com.immomo.momo.android.view.CropImage this$0 -> a
+    void run() -> run
+com.immomo.momo.android.view.CropImage$3$1 -> com.immomo.momo.android.view.g:
+    com.immomo.momo.android.view.CropImage$3 this$1 -> a
+    android.graphics.Bitmap val$b -> b
+    java.util.concurrent.CountDownLatch val$latch -> c
+    void run() -> run
+com.immomo.momo.android.view.CropImage$BackgroundJob -> com.immomo.momo.android.view.h:
+    java.lang.String message -> b
+    java.lang.Runnable mJob -> c
+    android.os.Handler mHandler -> d
+    com.immomo.momo.android.view.CropImage this$0 -> a
+    void run() -> run
+    android.os.Handler access$0(com.immomo.momo.android.view.CropImage$BackgroundJob) -> a
+com.immomo.momo.android.view.CropImage$BackgroundJob$1 -> com.immomo.momo.android.view.i:
+    com.immomo.momo.android.view.CropImage$BackgroundJob this$1 -> a
+    java.util.concurrent.CountDownLatch val$latch -> b
+    void run() -> run
+com.immomo.momo.android.view.CropImageView -> com.immomo.momo.android.view.CropImageView:
+    java.util.ArrayList mHighlightViews -> a
+    com.immomo.momo.android.view.HighlightView mMotionHighlightView -> b
+    float mLastX -> c
+    float mLastY -> d
+    int mMotionEdge -> e
+    com.immomo.momo.android.view.CropImage mCropImage -> n
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void zoomTo(float,float,float) -> a
+    void postTranslate(float,float) -> a
+    void recomputeFocus(android.view.MotionEvent) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void ensureVisible(com.immomo.momo.android.view.HighlightView) -> b
+    void centerBasedOnHighlightView(com.immomo.momo.android.view.HighlightView) -> c
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void add(com.immomo.momo.android.view.HighlightView) -> a
+    void setCropImage(com.immomo.momo.android.view.CropImage) -> a
+    void resetView(android.graphics.Bitmap) -> a
+com.immomo.momo.android.view.FlippingImageView -> com.immomo.momo.android.view.FlippingImageView:
+    com.immomo.momo.android.view.RotateAnimation mAnimation -> a
+    boolean mIsHasAnimation -> b
+    void setRotateAnimation() -> b
+    void clearRotateAnimation() -> c
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void startAnimation() -> a
+    void onVisibilityChanged(android.view.View,int) -> onVisibilityChanged
+com.immomo.momo.android.view.HandyListView -> com.immomo.momo.android.view.HandyListView:
+    android.content.Context mContext -> a
+    android.view.LayoutInflater mInflater -> b
+    int mFirstVisibleItem -> c
+    boolean mIsTop -> d
+    boolean mIsBottom -> e
+    android.graphics.Point mDownPoint -> f
+    android.graphics.Point mMovePoint -> g
+    android.graphics.Point mUpPoint -> h
+    void init(android.content.Context) -> a
+    void onScroll(android.widget.AbsListView,int,int,int) -> onScroll
+    void onScrollStateChanged(android.widget.AbsListView,int) -> onScrollStateChanged
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onDown$53fcfd4a() -> a
+    void onMove$53fcfd4a() -> b
+    void onUp$53fcfd4a() -> c
+com.immomo.momo.android.view.HandyTextView -> com.immomo.momo.android.view.HandyTextView:
+    void setText(java.lang.CharSequence,android.widget.TextView$BufferType) -> setText
+com.immomo.momo.android.view.HeaderLayout -> com.immomo.momo.android.view.HeaderLayout:
+    android.view.LayoutInflater mInflater -> a
+    android.view.View mHeader -> b
+    android.widget.ImageView mIvLogo -> c
+    android.widget.LinearLayout mLayoutLeftContainer -> d
+    android.widget.LinearLayout mLayoutMiddleContainer -> e
+    android.widget.LinearLayout mLayoutRightContainer -> f
+    android.widget.LinearLayout mLayoutTitle -> g
+    com.immomo.momo.android.view.ScrollingTextView mStvTitle -> h
+    com.immomo.momo.android.view.HandyTextView mHtvSubTitle -> i
+    android.widget.RelativeLayout mLayoutSearch -> j
+    android.widget.EditText mEtSearch -> k
+    android.widget.Button mBtnSearchClear -> l
+    android.widget.ImageView mIvSearchLoading -> m
+    com.immomo.momo.android.view.HeaderLayout$onSearchListener mOnSearchListener -> n
+    com.immomo.momo.android.view.HandyTextView mHtvRightText -> o
+    android.widget.LinearLayout mLayoutRightImageButtonLayout -> p
+    android.widget.ImageButton mIbRightImageButton -> q
+    com.immomo.momo.android.view.HeaderLayout$onRightImageButtonClickListener mRightImageButtonClickListener -> r
+    com.immomo.momo.android.view.HeaderSpinner mHsSpinner -> s
+    android.widget.LinearLayout mLayoutMiddleImageButtonLayout -> t
+    android.widget.ImageButton mIbMiddleImageButton -> u
+    com.immomo.momo.android.view.HeaderLayout$onMiddleImageButtonClickListener mMiddleImageButtonClickListener -> v
+    com.immomo.momo.android.view.SwitcherButton mSbRightSwitcherButton -> w
+    com.immomo.momo.android.view.SwitcherButton$onSwitcherButtonClickListener mSwitcherButtonClickListener -> x
+    int[] $SWITCH_TABLE$com$immomo$momo$android$view$HeaderLayout$HeaderStyle -> y
+    int[] $SWITCH_TABLE$com$immomo$momo$android$view$HeaderLayout$SearchState -> z
+    void init(android.content.Context) -> a
+    android.view.View findViewByHeaderId(int) -> a
+    void init(com.immomo.momo.android.view.HeaderLayout$HeaderStyle) -> a
+    void setDefaultTitle$7b48e543(java.lang.CharSequence) -> a
+    void setTitleRightText$22c6279f(java.lang.CharSequence,java.lang.CharSequence) -> a
+    void setTitleRightImageButton$21d7bf64(java.lang.CharSequence,com.immomo.momo.android.view.HeaderLayout$onRightImageButtonClickListener) -> a
+    void titleNearBy(boolean) -> a
+    com.immomo.momo.android.view.HeaderSpinner setTitleNearBy$17756797(java.lang.CharSequence,com.immomo.momo.android.view.HeaderSpinner$onSpinnerClickListener,java.lang.CharSequence,com.immomo.momo.android.view.HeaderLayout$onMiddleImageButtonClickListener,java.lang.CharSequence,java.lang.CharSequence,com.immomo.momo.android.view.SwitcherButton$onSwitcherButtonClickListener) -> a
+    void showSearch() -> a
+    void dismissSearch() -> b
+    boolean searchIsShowing() -> c
+    void clearSearch() -> d
+    void initSearch(com.immomo.momo.android.view.HeaderLayout$onSearchListener) -> a
+    void changeSearchState(com.immomo.momo.android.view.HeaderLayout$SearchState) -> a
+    int[] $SWITCH_TABLE$com$immomo$momo$android$view$HeaderLayout$HeaderStyle() -> e
+    com.immomo.momo.android.view.HeaderLayout$onRightImageButtonClickListener access$1(com.immomo.momo.android.view.HeaderLayout) -> a
+    com.immomo.momo.android.view.HeaderLayout$onMiddleImageButtonClickListener access$2(com.immomo.momo.android.view.HeaderLayout) -> b
+    com.immomo.momo.android.view.HeaderLayout$onSearchListener access$3(com.immomo.momo.android.view.HeaderLayout) -> c
+    android.widget.EditText access$4(com.immomo.momo.android.view.HeaderLayout) -> d
+    int[] $SWITCH_TABLE$com$immomo$momo$android$view$HeaderLayout$SearchState() -> f
+com.immomo.momo.android.view.HeaderLayout$1 -> com.immomo.momo.android.view.j:
+    com.immomo.momo.android.view.HeaderLayout this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.view.HeaderLayout$2 -> com.immomo.momo.android.view.k:
+    com.immomo.momo.android.view.HeaderLayout this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.view.HeaderLayout$3 -> com.immomo.momo.android.view.l:
+    com.immomo.momo.android.view.HeaderLayout this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.view.HeaderLayout$4 -> com.immomo.momo.android.view.m:
+    com.immomo.momo.android.view.HeaderLayout this$0 -> a
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+com.immomo.momo.android.view.HeaderLayout$HeaderStyle -> com.immomo.momo.android.view.n:
+    com.immomo.momo.android.view.HeaderLayout$HeaderStyle DEFAULT_TITLE -> a
+    com.immomo.momo.android.view.HeaderLayout$HeaderStyle TITLE_RIGHT_TEXT -> b
+    com.immomo.momo.android.view.HeaderLayout$HeaderStyle TITLE_RIGHT_IMAGEBUTTON -> c
+    com.immomo.momo.android.view.HeaderLayout$HeaderStyle TITLE_NEARBY_PEOPLE -> d
+    com.immomo.momo.android.view.HeaderLayout$HeaderStyle TITLE_NEARBY_GROUP -> e
+    com.immomo.momo.android.view.HeaderLayout$HeaderStyle[] ENUM$VALUES -> f
+    com.immomo.momo.android.view.HeaderLayout$HeaderStyle[] values() -> values
+    com.immomo.momo.android.view.HeaderLayout$HeaderStyle valueOf(java.lang.String) -> valueOf
+com.immomo.momo.android.view.HeaderLayout$SearchState -> com.immomo.momo.android.view.o:
+    com.immomo.momo.android.view.HeaderLayout$SearchState INPUT -> a
+    com.immomo.momo.android.view.HeaderLayout$SearchState SEARCH -> b
+    com.immomo.momo.android.view.HeaderLayout$SearchState[] ENUM$VALUES -> c
+    com.immomo.momo.android.view.HeaderLayout$SearchState[] values() -> values
+    com.immomo.momo.android.view.HeaderLayout$SearchState valueOf(java.lang.String) -> valueOf
+com.immomo.momo.android.view.HeaderLayout$onMiddleImageButtonClickListener -> com.immomo.momo.android.view.p:
+    void onClick() -> a
+com.immomo.momo.android.view.HeaderLayout$onRightImageButtonClickListener -> com.immomo.momo.android.view.q:
+    void onClick() -> a
+com.immomo.momo.android.view.HeaderLayout$onSearchListener -> com.immomo.momo.android.view.r:
+    void onSearch(android.widget.EditText) -> a
+com.immomo.momo.android.view.HeaderSpinner -> com.immomo.momo.android.view.HeaderSpinner:
+    android.view.View mView -> a
+    android.widget.RelativeLayout mLayoutRoot -> b
+    com.immomo.momo.android.view.HandyTextView mHtvText -> c
+    com.immomo.momo.android.view.RotatingImageView mRivArrow -> d
+    android.view.LayoutInflater mInflater -> e
+    boolean mIsSelect -> f
+    com.immomo.momo.android.view.HeaderSpinner$onSpinnerClickListener mOnSpinnerClickListener -> g
+    void init(android.content.Context) -> a
+    android.view.View findViewBySpinnerId(int) -> a
+    void setText(java.lang.CharSequence) -> a
+    void initSpinnerState(boolean) -> a
+    void setOnSpinnerClickListener(com.immomo.momo.android.view.HeaderSpinner$onSpinnerClickListener) -> a
+    com.immomo.momo.android.view.HeaderSpinner$onSpinnerClickListener access$0(com.immomo.momo.android.view.HeaderSpinner) -> a
+    boolean access$1(com.immomo.momo.android.view.HeaderSpinner) -> b
+    void access$2(com.immomo.momo.android.view.HeaderSpinner,boolean) -> a
+com.immomo.momo.android.view.HeaderSpinner$1 -> com.immomo.momo.android.view.s:
+    com.immomo.momo.android.view.HeaderSpinner this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.view.HeaderSpinner$onSpinnerClickListener -> com.immomo.momo.android.view.t:
+    void onClick(boolean) -> a
+com.immomo.momo.android.view.HighlightView -> com.immomo.momo.android.view.u:
+    android.view.View mContext -> a
+    boolean mIsFocused -> b
+    boolean mHidden -> c
+    com.immomo.momo.android.view.HighlightView$ModifyMode mMode -> h
+    android.graphics.Rect mDrawRect -> d
+    android.graphics.RectF mImageRect -> e
+    android.graphics.RectF mCropRect -> f
+    android.graphics.Matrix mMatrix -> g
+    boolean mMaintainAspectRatio -> i
+    float mInitialAspectRatio -> j
+    boolean mCircle -> k
+    android.graphics.drawable.Drawable mResizeDrawableDiagonal -> l
+    android.graphics.drawable.Drawable mResizeDrawableDiagonal2 -> m
+    android.graphics.Paint mFocusPaint -> n
+    android.graphics.Paint mNoFocusPaint -> o
+    android.graphics.Paint mOutlinePaint -> p
+    void draw(android.graphics.Canvas) -> a
+    void setMode(com.immomo.momo.android.view.HighlightView$ModifyMode) -> a
+    int getHit(float,float) -> a
+    void handleMotion(int,float,float) -> a
+    android.graphics.Rect computeLayout() -> b
+    void invalidate() -> a
+    void setup$f4cafd(android.graphics.Matrix,android.graphics.Rect,android.graphics.RectF) -> a
+com.immomo.momo.android.view.HighlightView$ModifyMode -> com.immomo.momo.android.view.v:
+    com.immomo.momo.android.view.HighlightView$ModifyMode None -> a
+    com.immomo.momo.android.view.HighlightView$ModifyMode Move -> b
+    com.immomo.momo.android.view.HighlightView$ModifyMode Grow -> c
+    com.immomo.momo.android.view.HighlightView$ModifyMode[] ENUM$VALUES -> d
+    com.immomo.momo.android.view.HighlightView$ModifyMode[] values() -> values
+    com.immomo.momo.android.view.HighlightView$ModifyMode valueOf(java.lang.String) -> valueOf
+com.immomo.momo.android.view.ImageViewTouchBase -> com.immomo.momo.android.view.ImageViewTouchBase:
+    android.graphics.Matrix mBaseMatrix -> f
+    android.graphics.Matrix mSuppMatrix -> g
+    android.graphics.Matrix mDisplayMatrix -> a
+    float[] mMatrixValues -> b
+    com.immomo.momo.android.view.RotateBitmap mBitmapDisplayed -> h
+    int mThisWidth -> i
+    int mThisHeight -> j
+    float mMaxZoom -> k
+    int mState -> l
+    com.immomo.momo.android.view.ImageViewTouchBase$Recycler mRecycler -> c
+    android.os.Handler mHandler -> m
+    java.lang.Runnable mOnLayoutRunnable -> d
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void setImageBitmap(android.graphics.Bitmap) -> setImageBitmap
+    void setImageBitmap(android.graphics.Bitmap,int) -> a
+    void clear() -> a
+    void setImageBitmapResetBase$1fdc9e65(android.graphics.Bitmap) -> b
+    void setImageRotateBitmapResetBase(com.immomo.momo.android.view.RotateBitmap,boolean) -> a
+    void center$25decb5() -> b
+    float getScale() -> c
+    void getProperBaseMatrix(com.immomo.momo.android.view.RotateBitmap,android.graphics.Matrix) -> a
+    android.graphics.Matrix getImageViewMatrix() -> d
+    void zoomTo(float,float,float) -> a
+    void zoomTo$4098370b(float,float,float) -> b
+    void postTranslate(float,float) -> a
+    void panBy(float,float) -> b
+com.immomo.momo.android.view.ImageViewTouchBase$1 -> com.immomo.momo.android.view.w:
+    com.immomo.momo.android.view.ImageViewTouchBase this$0 -> a
+    com.immomo.momo.android.view.RotateBitmap val$bitmap -> b
+    boolean val$resetSupp -> c
+    void run() -> run
+com.immomo.momo.android.view.ImageViewTouchBase$2 -> com.immomo.momo.android.view.x:
+    com.immomo.momo.android.view.ImageViewTouchBase this$0 -> a
+    float val$durationMs -> b
+    long val$startTime -> c
+    float val$oldScale -> d
+    float val$incrementPerMs -> e
+    float val$centerX -> f
+    float val$centerY -> g
+    void run() -> run
+com.immomo.momo.android.view.ImageViewTouchBase$Recycler -> com.immomo.momo.android.view.y:
+com.immomo.momo.android.view.MoMoRefreshExpandableList -> com.immomo.momo.android.view.MoMoRefreshExpandableList:
+    com.immomo.momo.android.view.MoMoRefreshExpandableList$PinnedHeaderAdapter mAdapter -> i
+    android.view.View mHeaderView -> j
+    boolean mHeaderViewVisible -> k
+    int mHeaderViewWidth -> l
+    int mHeaderViewHeight -> m
+    void setPinnedHeaderView(android.view.View) -> a
+    void setAdapter(android.widget.ListAdapter) -> setAdapter
+    void onMeasure(int,int) -> onMeasure
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void configureHeaderView(int) -> a
+    void dispatchDraw(android.graphics.Canvas) -> dispatchDraw
+    void onScroll(android.widget.AbsListView,int,int,int) -> onScroll
+    boolean ismHeaderViewVisible() -> d
+    int getFirstItemPosition() -> e
+com.immomo.momo.android.view.MoMoRefreshExpandableList$PinnedHeaderAdapter -> com.immomo.momo.android.view.z:
+    int getPinnedHeaderState(int) -> a
+    void configurePinnedHeader$17e143a3(android.view.View,int) -> a
+com.immomo.momo.android.view.MoMoRefreshListView -> com.immomo.momo.android.view.MoMoRefreshListView:
+    android.view.View mHeader -> i
+    com.immomo.momo.android.view.HandyTextView mHtvTitle -> j
+    com.immomo.momo.android.view.HandyTextView mHtvTime -> k
+    android.widget.ImageView mIvArrow -> l
+    android.widget.ImageView mIvLoading -> m
+    android.widget.ImageView mIvCancel -> n
+    android.view.animation.RotateAnimation mPullAnimation -> o
+    android.view.animation.RotateAnimation mReverseAnimation -> p
+    android.view.animation.Animation mLoadingAnimation -> q
+    boolean mIsRecored -> r
+    int mHeaderHeight -> s
+    int mStartY -> t
+    int mState -> u
+    boolean mIsBack -> v
+    com.immomo.momo.android.view.MoMoRefreshListView$OnRefreshListener mOnRefreshListener -> w
+    com.immomo.momo.android.view.MoMoRefreshListView$OnCancelListener mOnCancelListener -> x
+    boolean mIsRefreshable -> y
+    boolean mIsCancelable -> z
+    void init() -> d
+    void onDown$53fcfd4a() -> a
+    void onMove$53fcfd4a() -> b
+    void onUp$53fcfd4a() -> c
+    void changeHeaderViewByState() -> e
+    void onRefreshComplete() -> f
+    void onRefresh() -> h
+    void onManualRefresh() -> g
+    void setOnRefreshListener(com.immomo.momo.android.view.MoMoRefreshListView$OnRefreshListener) -> a
+    void setOnCancelListener(com.immomo.momo.android.view.MoMoRefreshListView$OnCancelListener) -> a
+    com.immomo.momo.android.view.MoMoRefreshListView$OnCancelListener access$0(com.immomo.momo.android.view.MoMoRefreshListView) -> a
+    boolean access$1(com.immomo.momo.android.view.MoMoRefreshListView) -> b
+com.immomo.momo.android.view.MoMoRefreshListView$1 -> com.immomo.momo.android.view.aa:
+    com.immomo.momo.android.view.MoMoRefreshListView this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.view.MoMoRefreshListView$OnCancelListener -> com.immomo.momo.android.view.ab:
+    void onCancel() -> E
+com.immomo.momo.android.view.MoMoRefreshListView$OnRefreshListener -> com.immomo.momo.android.view.ac:
+    void onRefresh() -> D
+com.immomo.momo.android.view.PagerScrollView -> com.immomo.momo.android.view.PagerScrollView:
+    float mDistanceX -> a
+    float mDistanceY -> b
+    float mLastX -> c
+    float mLastY -> d
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+com.immomo.momo.android.view.PhotoTextView -> com.immomo.momo.android.view.PhotoTextView:
+    void setText(java.lang.CharSequence,android.widget.TextView$BufferType) -> setText
+com.immomo.momo.android.view.RotateAnimation -> com.immomo.momo.android.view.ad:
+    android.graphics.Camera mCamera -> a
+    float mCenterX -> b
+    float mCenterY -> c
+    com.immomo.momo.android.view.RotateAnimation$Mode mMode -> d
+    void initialize(int,int,int,int) -> initialize
+    void applyTransformation(float,android.view.animation.Transformation) -> applyTransformation
+com.immomo.momo.android.view.RotateAnimation$Mode -> com.immomo.momo.android.view.ae:
+    com.immomo.momo.android.view.RotateAnimation$Mode X -> a
+    com.immomo.momo.android.view.RotateAnimation$Mode Y -> b
+    com.immomo.momo.android.view.RotateAnimation$Mode Z -> c
+    com.immomo.momo.android.view.RotateAnimation$Mode[] ENUM$VALUES -> d
+    com.immomo.momo.android.view.RotateAnimation$Mode[] values() -> values
+    com.immomo.momo.android.view.RotateAnimation$Mode valueOf(java.lang.String) -> valueOf
+com.immomo.momo.android.view.RotateBitmap -> com.immomo.momo.android.view.af:
+    android.graphics.Bitmap mBitmap -> a
+    int mRotation -> b
+    void setRotation(int) -> a
+    int getRotation() -> a
+    android.graphics.Bitmap getBitmap() -> b
+    void setBitmap(android.graphics.Bitmap) -> a
+    android.graphics.Matrix getRotateMatrix() -> c
+    boolean isOrientationChanged() -> f
+    int getHeight() -> d
+    int getWidth() -> e
+com.immomo.momo.android.view.RotateImageView -> com.immomo.momo.android.view.RotateImageView:
+    android.graphics.Bitmap mBitmap -> a
+    void setImageBitmap(android.graphics.Bitmap) -> setImageBitmap
+    void setImageResource(int) -> setImageResource
+    android.graphics.Bitmap rotate$5094b21e(com.immomo.momo.android.view.RotateImageView$RotateType) -> a
+com.immomo.momo.android.view.RotateImageView$RotateType -> com.immomo.momo.android.view.ag:
+    com.immomo.momo.android.view.RotateImageView$RotateType DEFAULT -> a
+    com.immomo.momo.android.view.RotateImageView$RotateType LEFT -> b
+    com.immomo.momo.android.view.RotateImageView$RotateType RIGHT -> c
+    com.immomo.momo.android.view.RotateImageView$RotateType[] ENUM$VALUES -> d
+    com.immomo.momo.android.view.RotateImageView$RotateType[] values() -> values
+    com.immomo.momo.android.view.RotateImageView$RotateType valueOf(java.lang.String) -> valueOf
+com.immomo.momo.android.view.RotatingImageView -> com.immomo.momo.android.view.RotatingImageView:
+    int mDegress -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void setDegress(int) -> a
+com.immomo.momo.android.view.RoundImageView -> com.immomo.momo.android.view.RoundImageView:
+    void setImageBitmap(android.graphics.Bitmap) -> setImageBitmap
+com.immomo.momo.android.view.ScrollViewPager -> com.immomo.momo.android.view.ScrollViewPager:
+    boolean mIsEnable -> a
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void setAdapter(android.support.v4.view.PagerAdapter) -> a
+    void setEnableTouchScroll$1385ff() -> f
+com.immomo.momo.android.view.ScrollingTextView -> com.immomo.momo.android.view.ScrollingTextView:
+    void init() -> a
+    boolean isFocused() -> isFocused
+    void onClick(android.view.View) -> onClick
+com.immomo.momo.android.view.SwitcherButton -> com.immomo.momo.android.view.SwitcherButton:
+    android.view.View mView -> a
+    android.widget.RelativeLayout mLayoutRoot -> b
+    android.widget.LinearLayout mLayoutTab -> c
+    android.widget.ImageView mIvLeftImage -> d
+    android.widget.TextView mTvLeftText -> e
+    android.widget.ImageView mIvRightImage -> f
+    android.widget.TextView mTvRightText -> g
+    android.view.LayoutInflater mInflater -> h
+    com.immomo.momo.android.view.SwitcherButton$onSwitcherButtonClickListener mSwitcherButtonClickListener -> i
+    com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState mState -> j
+    void init(android.content.Context) -> a
+    android.view.View findViewBySwitcherId(int) -> a
+    void setLeftText(java.lang.CharSequence) -> a
+    void setRightText(java.lang.CharSequence) -> b
+    void setOnSwitcherButtonClickListener(com.immomo.momo.android.view.SwitcherButton$onSwitcherButtonClickListener) -> a
+    com.immomo.momo.android.view.SwitcherButton$onSwitcherButtonClickListener access$0(com.immomo.momo.android.view.SwitcherButton) -> a
+    com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState access$1(com.immomo.momo.android.view.SwitcherButton) -> b
+    void access$2(com.immomo.momo.android.view.SwitcherButton,com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState) -> a
+    android.widget.LinearLayout access$3(com.immomo.momo.android.view.SwitcherButton) -> c
+    android.widget.TextView access$4(com.immomo.momo.android.view.SwitcherButton) -> d
+    android.widget.TextView access$5(com.immomo.momo.android.view.SwitcherButton) -> e
+com.immomo.momo.android.view.SwitcherButton$1 -> com.immomo.momo.android.view.ah:
+    com.immomo.momo.android.view.SwitcherButton this$0 -> a
+    int[] $SWITCH_TABLE$com$immomo$momo$android$view$SwitcherButton$SwitcherButtonState -> b
+    void onClick(android.view.View) -> onClick
+    int[] $SWITCH_TABLE$com$immomo$momo$android$view$SwitcherButton$SwitcherButtonState() -> a
+com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState -> com.immomo.momo.android.view.ai:
+    com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState LEFT -> a
+    com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState RIGHT -> b
+    com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState[] ENUM$VALUES -> c
+    com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState[] values() -> values
+    com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState valueOf(java.lang.String) -> valueOf
+com.immomo.momo.android.view.SwitcherButton$onSwitcherButtonClickListener -> com.immomo.momo.android.view.aj:
+    void onClick(com.immomo.momo.android.view.SwitcherButton$SwitcherButtonState) -> a
+com.immomo.momo.android.view.UserPhotosView -> com.immomo.momo.android.view.UserPhotosView:
+    android.view.View mView -> a
+    com.immomo.momo.android.view.ScrollViewPager mViewPager -> b
+    android.view.LayoutInflater mInflater -> c
+    android.view.View[] mPhotoBlocks -> d
+    android.view.View mPhotoPage1 -> e
+    android.view.View mPhotoPage2 -> f
+    android.view.View mPhotoPage3 -> g
+    java.util.List mPageViews -> h
+    java.util.List mPhotos -> i
+    int mTotalPage -> j
+    int mWidth -> k
+    com.immomo.momo.android.BaseApplication mApplication -> l
+    com.immomo.momo.android.view.UserPhotosView$onPagerPhotoItemClickListener mOnPagerPhotoItemClickListener -> m
+    void init(android.content.Context) -> a
+    void setPhotos(com.immomo.momo.android.BaseApplication,java.util.List) -> a
+    void initPhotoBlocks(android.view.View,int) -> a
+    void onClick(android.view.View) -> onClick
+    int getMargin$134621() -> a
+    void setOnPagerPhotoItemClickListener(com.immomo.momo.android.view.UserPhotosView$onPagerPhotoItemClickListener) -> a
+    java.util.List access$0(com.immomo.momo.android.view.UserPhotosView) -> a
+com.immomo.momo.android.view.UserPhotosView$ViewPagerAdapter -> com.immomo.momo.android.view.ak:
+    com.immomo.momo.android.view.UserPhotosView this$0 -> a
+    void destroyItem$7e55ba3e(android.view.View,int) -> b
+    int getCount() -> a
+    java.lang.Object instantiateItem(android.view.View,int) -> a
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+com.immomo.momo.android.view.UserPhotosView$onPagerPhotoItemClickListener -> com.immomo.momo.android.view.al:
+    void onItemClick$5359dc9a(int) -> a
+com.immomo.momo.android.view.photoview.Compat -> com.immomo.momo.android.view.photoview.a:
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+com.immomo.momo.android.view.photoview.PhotoView -> com.immomo.momo.android.view.photoview.PhotoView:
+    com.immomo.momo.android.view.photoview.PhotoViewAttacher mAttacher -> a
+    android.widget.ImageView$ScaleType mPendingScaleType -> b
+    android.widget.ImageView$ScaleType getScaleType() -> getScaleType
+    void setImageDrawable(android.graphics.drawable.Drawable) -> setImageDrawable
+    void setImageResource(int) -> setImageResource
+    void setImageURI(android.net.Uri) -> setImageURI
+    void setOnLongClickListener(android.view.View$OnLongClickListener) -> setOnLongClickListener
+    void setScaleType(android.widget.ImageView$ScaleType) -> setScaleType
+    void onDetachedFromWindow() -> onDetachedFromWindow
+com.immomo.momo.android.view.photoview.PhotoViewAttacher -> com.immomo.momo.android.view.photoview.b:
+    boolean DEBUG -> a
+    float mMinScale -> b
+    float mMidScale -> c
+    float mMaxScale -> d
+    boolean mAllowParentInterceptOnEdge -> e
+    java.lang.ref.WeakReference mImageView -> f
+    android.view.ViewTreeObserver mViewTreeObserver -> g
+    android.view.GestureDetector mGestureDetector -> h
+    com.immomo.momo.android.view.photoview.VersionedGestureDetector mScaleDragDetector -> i
+    android.graphics.Matrix mBaseMatrix -> j
+    android.graphics.Matrix mDrawMatrix -> k
+    android.graphics.Matrix mSuppMatrix -> l
+    android.graphics.RectF mDisplayRect -> m
+    float[] mMatrixValues -> n
+    com.immomo.momo.android.view.photoview.PhotoViewAttacher$OnMatrixChangedListener mMatrixChangeListener -> o
+    com.immomo.momo.android.view.photoview.PhotoViewAttacher$OnPhotoTapListener mPhotoTapListener -> p
+    com.immomo.momo.android.view.photoview.PhotoViewAttacher$OnViewTapListener mViewTapListener -> q
+    android.view.View$OnLongClickListener mLongClickListener -> r
+    int mIvTop -> s
+    int mIvRight -> t
+    int mIvBottom -> u
+    int mIvLeft -> v
+    com.immomo.momo.android.view.photoview.PhotoViewAttacher$FlingRunnable mCurrentFlingRunnable -> w
+    int mScrollEdge -> x
+    boolean mZoomEnabled -> y
+    android.widget.ImageView$ScaleType mScaleType -> z
+    int[] $SWITCH_TABLE$android$widget$ImageView$ScaleType -> A
+    boolean hasDrawable(android.widget.ImageView) -> a
+    void setImageViewScaleTypeMatrix(android.widget.ImageView) -> b
+    void cleanup() -> a
+    android.graphics.RectF getDisplayRect() -> b
+    android.widget.ImageView getImageView() -> c
+    float getScale() -> d
+    android.widget.ImageView$ScaleType getScaleType() -> e
+    boolean onDoubleTap(android.view.MotionEvent) -> onDoubleTap
+    boolean onDoubleTapEvent(android.view.MotionEvent) -> onDoubleTapEvent
+    void onDrag(float,float) -> a
+    void onFling(float,float,float,float) -> a
+    void onGlobalLayout() -> onGlobalLayout
+    void onScale(float,float,float) -> a
+    boolean onSingleTapConfirmed(android.view.MotionEvent) -> onSingleTapConfirmed
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    void setOnLongClickListener(android.view.View$OnLongClickListener) -> a
+    void setScaleType(android.widget.ImageView$ScaleType) -> a
+    void update() -> f
+    void zoomTo(float,float,float) -> b
+    android.graphics.Matrix getDisplayMatrix() -> g
+    void checkAndDisplayMatrix() -> h
+    void checkMatrixBounds() -> i
+    android.graphics.RectF getDisplayRect(android.graphics.Matrix) -> a
+    void resetMatrix() -> j
+    void setImageViewMatrix(android.graphics.Matrix) -> b
+    void updateBaseMatrix(android.graphics.drawable.Drawable) -> a
+    android.graphics.Matrix access$0(com.immomo.momo.android.view.photoview.PhotoViewAttacher) -> a
+    void access$1(com.immomo.momo.android.view.photoview.PhotoViewAttacher) -> b
+    void access$2(com.immomo.momo.android.view.photoview.PhotoViewAttacher,android.graphics.Matrix) -> a
+    int[] $SWITCH_TABLE$android$widget$ImageView$ScaleType() -> k
+    android.view.View$OnLongClickListener access$4(com.immomo.momo.android.view.photoview.PhotoViewAttacher) -> c
+    java.lang.ref.WeakReference access$5(com.immomo.momo.android.view.photoview.PhotoViewAttacher) -> d
+com.immomo.momo.android.view.photoview.PhotoViewAttacher$1 -> com.immomo.momo.android.view.photoview.c:
+    com.immomo.momo.android.view.photoview.PhotoViewAttacher this$0 -> a
+    void onLongPress(android.view.MotionEvent) -> onLongPress
+com.immomo.momo.android.view.photoview.PhotoViewAttacher$AnimatedZoomRunnable -> com.immomo.momo.android.view.photoview.d:
+    float mFocalX -> b
+    float mFocalY -> c
+    float mTargetZoom -> d
+    float mDeltaScale -> e
+    com.immomo.momo.android.view.photoview.PhotoViewAttacher this$0 -> a
+    void run() -> run
+com.immomo.momo.android.view.photoview.PhotoViewAttacher$FlingRunnable -> com.immomo.momo.android.view.photoview.e:
+    com.immomo.momo.android.view.photoview.ScrollerProxy mScroller -> b
+    int mCurrentX -> c
+    int mCurrentY -> d
+    com.immomo.momo.android.view.photoview.PhotoViewAttacher this$0 -> a
+    void cancelFling() -> a
+    void fling(int,int,int,int) -> a
+    void run() -> run
+com.immomo.momo.android.view.photoview.PhotoViewAttacher$OnMatrixChangedListener -> com.immomo.momo.android.view.photoview.f:
+com.immomo.momo.android.view.photoview.PhotoViewAttacher$OnPhotoTapListener -> com.immomo.momo.android.view.photoview.g:
+com.immomo.momo.android.view.photoview.PhotoViewAttacher$OnViewTapListener -> com.immomo.momo.android.view.photoview.h:
+com.immomo.momo.android.view.photoview.ScrollerProxy -> com.immomo.momo.android.view.photoview.i:
+    boolean computeScrollOffset() -> a
+    void fling$11627f15(int,int,int,int,int,int,int,int) -> a
+    void forceFinished$1385ff() -> b
+    int getCurrX() -> c
+    int getCurrY() -> d
+com.immomo.momo.android.view.photoview.ScrollerProxy$GingerScroller -> com.immomo.momo.android.view.photoview.j:
+    android.widget.OverScroller mScroller -> a
+    boolean computeScrollOffset() -> a
+    void fling$11627f15(int,int,int,int,int,int,int,int) -> a
+    void forceFinished$1385ff() -> b
+    int getCurrX() -> c
+    int getCurrY() -> d
+com.immomo.momo.android.view.photoview.ScrollerProxy$PreGingerScroller -> com.immomo.momo.android.view.photoview.k:
+    android.widget.Scroller mScroller -> a
+    boolean computeScrollOffset() -> a
+    void fling$11627f15(int,int,int,int,int,int,int,int) -> a
+    void forceFinished$1385ff() -> b
+    int getCurrX() -> c
+    int getCurrY() -> d
+com.immomo.momo.android.view.photoview.VersionedGestureDetector -> com.immomo.momo.android.view.photoview.l:
+    com.immomo.momo.android.view.photoview.VersionedGestureDetector$OnGestureListener mListener -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+    boolean isScaling() -> a
+com.immomo.momo.android.view.photoview.VersionedGestureDetector$CupcakeDetector -> com.immomo.momo.android.view.photoview.m:
+    float mLastTouchX -> b
+    float mLastTouchY -> c
+    float mTouchSlop -> d
+    float mMinimumVelocity -> e
+    android.view.VelocityTracker mVelocityTracker -> f
+    boolean mIsDragging -> g
+    float getActiveX(android.view.MotionEvent) -> b
+    float getActiveY(android.view.MotionEvent) -> c
+    boolean isScaling() -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+com.immomo.momo.android.view.photoview.VersionedGestureDetector$EclairDetector -> com.immomo.momo.android.view.photoview.n:
+    int mActivePointerId -> f
+    int mActivePointerIndex -> g
+    float getActiveX(android.view.MotionEvent) -> b
+    float getActiveY(android.view.MotionEvent) -> c
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+com.immomo.momo.android.view.photoview.VersionedGestureDetector$FroyoDetector -> com.immomo.momo.android.view.photoview.o:
+    android.view.ScaleGestureDetector mDetector -> f
+    android.view.ScaleGestureDetector$OnScaleGestureListener mScaleListener -> g
+    boolean isScaling() -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+com.immomo.momo.android.view.photoview.VersionedGestureDetector$FroyoDetector$1 -> com.immomo.momo.android.view.photoview.p:
+    com.immomo.momo.android.view.photoview.VersionedGestureDetector$FroyoDetector this$1 -> a
+    boolean onScale(android.view.ScaleGestureDetector) -> onScale
+    boolean onScaleBegin(android.view.ScaleGestureDetector) -> onScaleBegin
+    void onScaleEnd(android.view.ScaleGestureDetector) -> onScaleEnd
+com.immomo.momo.android.view.photoview.VersionedGestureDetector$OnGestureListener -> com.immomo.momo.android.view.photoview.q:
+    void onDrag(float,float) -> a
+    void onFling(float,float,float,float) -> a
+    void onScale(float,float,float) -> a
